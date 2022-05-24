@@ -52,9 +52,9 @@ const MyDialog = () => {
                         <button className="mx-auto pl-8 pr-8 pt-4 pb-4 bg-green-500 hover:bg-green-700 text-white text-s xl:text-xl font-bold rounded-xl">✓</button> 
 
                     </div>
-                    
+
                     </div>
-                    <DialogClose asChild>
+                    <DialogClose>
                     </DialogClose>
                 </DialogContent>
             </DialogPrimitive.Overlay>
