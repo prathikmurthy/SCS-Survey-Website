@@ -24,7 +24,7 @@ const MyDialog = () => {
     const API_Post = () => {
         console.log(JSON.stringify(list));
         axios.post('/api/db', {
-            id: 'test',
+            id: document.getElementById('input').value,
             data: JSON.parse(JSON.stringify(list)),
         })
     }
@@ -63,7 +63,7 @@ const MyDialog = () => {
                     </DialogDescription>
                     
                     <div className="grid grid-cols-2 pt-3 xl:pt-10">
-                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center rounded-2xl" type="text" placeholder="Enter Steelcase Username"></input>
+                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center rounded-2xl" id="input" type="text" placeholder="Enter Steelcase Username"></input>
 
                         <div className="mx-auto">
                             <DialogClose>

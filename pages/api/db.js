@@ -8,19 +8,39 @@ console.log(id);
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 export default async function handler(req, res) {
-    console.log(req.body);
-
     let m = new Mongo(new MongoClient(id, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }), "test", "test");
-    
     await m.init();
 
-    const d = new Date();
+    switch (req.method) {
+        case 'POST': 
+            console.log(req.body);
+        
+            const d = new Date();
+        
+            req.body['date'] = d.toString();
+        
+            await m.add(req.body);
+            
+            res.status(200).json( {res: 'Success'} )
 
-    req.body['date'] = d.toString();
+            break;
+        
+        case 'DELETE':
+            await m.cleardb();
+            res.status(200).json( {res: 'Success'})
+        }
 
-    await m.add(req.body);
     await m.close();
-
-    res.status(200).json( {res: 'Success'} )
   }
+
+// API Call to Clear Database (use in Dev Tools Console)
+// fetch('http://localhost:3000/api/db', {
+//   method: 'DELETE',
+  
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8'
+//   }
+// })
+// .then(res => res.json())
+// .then(console.log)
   
