@@ -1,6 +1,7 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import {useContext, useState, useEffect } from 'react';
 import { UserContext } from '../pages/index.js';
+const axios = require('axios');
 
 const Dialog = DialogPrimitive.Root;
 const DialogTrigger = DialogPrimitive.Trigger;
@@ -10,8 +11,23 @@ const DialogDescription = DialogPrimitive.Description;
 const DialogClose = DialogPrimitive.Close;
 
 const MyDialog = () => {
+    
     const {list, setList} = useContext(UserContext);
-
+    
+    const ClearSelections = () => {
+        console.log(list);
+        Object.keys(list).forEach(key => {
+            list[key] = [];
+        })
+    }
+    
+    const API_Post = () => {
+        console.log(JSON.stringify(list));
+        axios.post('/api/db', {
+            id: 'test',
+            data: JSON.parse(JSON.stringify(list)),
+        })
+    }
 
     let out = []
     for (var i = 0; i < Object.keys(list).length; i++) {
@@ -47,15 +63,19 @@ const MyDialog = () => {
                     </DialogDescription>
                     
                     <div className="grid grid-cols-2 pt-3 xl:pt-10">
-                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center" type="text"></input>
+                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center rounded-2xl" type="text" placeholder="Enter Steelcase Username"></input>
 
-                        <button className="mx-auto pl-8 pr-8 pt-4 pb-4 bg-green-500 hover:bg-green-700 text-white text-s xl:text-xl font-bold rounded-xl">✓</button> 
+                        <div className="mx-auto">
+                            <DialogClose>
+                                <button className="pl-8 pr-8 pt-4 pb-4 bg-green-500 hover:bg-green-700 text-white text-s xl:text-xl font-bold rounded-xl" onClick={API_Post}>
+                                    ✓    
+                                </button> 
+                            </DialogClose>
+                        </div>
 
                     </div>
 
                     </div>
-                    <DialogClose>
-                    </DialogClose>
                 </DialogContent>
             </DialogPrimitive.Overlay>
             </div>
