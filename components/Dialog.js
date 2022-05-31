@@ -35,7 +35,7 @@ const MyDialog = () => {
             <div className="grid grid-cols-2 p-5">
                 <p className="font-bold text-left pl-5">{Object.keys(list)[i]}</p>
                 <div className="grid grid-cols-4">
-                    { [list[Object.keys(list)[i]].map(x => <p className="text-right pr-5 text-l xl:text-xl">{x.id}</p>)] }
+                    { [list[Object.keys(list)[i]].map(x => <p key={x} className="text-right pr-5 text-l xl:text-xl">{x.id}</p>)] }
                 </div>
             </div>
             

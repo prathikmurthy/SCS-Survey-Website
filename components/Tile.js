@@ -1,5 +1,6 @@
 import { react, useState, useContext } from 'react';
 import {UserContext} from '../pages/index.js'
+import Image from 'next/image'
 
 export default function Tile(props) {
 
@@ -44,7 +45,12 @@ export default function Tile(props) {
     return (
         <div className = {`pt-5 pb-10 rounded-2xl bg-${color} hover:scale-110 pl-2 pr-2 transition ease-in-out` } onClick={update} >
             <div className="relative">
-                <img src="https://picsum.photos/400/300" className="w-full rounded-xl"></img>
+                <Image 
+                    src="https://picsum.photos/400/300"
+                    alt="picture"
+                    className="w-full rounded-xl"
+                />
+                {/* <img src="https://picsum.photos/400/300" className="w-full rounded-xl"></img> */}
                 {/* <img src="https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623221806/www.steelcase.com/2021/06/09/21-0160647.jpg" className="w-full rounded-xl"></img> */}
                 <button className="absolute inset-0 pl-4 pr-4 pt-2 pb-2 text-white font-bold rounded opacity-0 hover:opacity-100 bg-black/50 transition ease-in-out">Details</button> 
             </div>

@@ -57,7 +57,7 @@ export default function App() {
         <TitleBar />
         <div className="pb-20">
         
-        { [Object.keys(dict).map( x => <TileGrid title={x} rec={dict[x][0]} arr={dict[x][1]}/>)] }
+        { [Object.keys(dict).map( x => <TileGrid key={x} title={x} rec={dict[x][0]} arr={dict[x][1]}/>)] }
 
         {/* <TileGrid title="Category 1" rec="3" arr={x}/>
         <TileGrid title="Category 2" rec="7" arr={y}/>
