@@ -32,10 +32,12 @@ const MyDialog = () => {
     let out = []
     for (var i = 0; i < Object.keys(list).length; i++) {
         out.push(
-            <div className="grid grid-cols-2 p-5">
+            <div className="grid grid-cols-2 p-2 ">
                 <p className="font-bold text-left pl-5">{Object.keys(list)[i]}</p>
-                <div className="grid grid-cols-4">
-                    { [list[Object.keys(list)[i]].map(x => <p key={x} className="text-right pr-5 text-l xl:text-xl">{x.id}</p>)] }
+                <div>
+                    {/* { [list[Object.keys(list)[i]].map(x => <p key={x} className="text-right pr-5 text-l xl:text-xl">{x.id}</p>)] } */}
+                    {/* { [list[Object.keys(list)[i]].map(x => )] } */}
+                    <p className="text-right pr-5 text-green-500 font-bold text-l xl:text-xl">{list[Object.keys(list)[i]].length} Selected</p>
                 </div>
             </div>
             
