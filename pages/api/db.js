@@ -2,13 +2,17 @@
 import Mongo from '../../components/MongoDB.js';
 require('dotenv').config();
 const id = process.env.MONGO_API;
-
-console.log(id);
-
+const db_name = "Planning-Idea-Survey";
+const collection = "00" 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 export default async function handler(req, res) {
-    let m = new Mongo(new MongoClient(id, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }), "test", "test");
+    let m = new Mongo(new MongoClient(id,  { 
+                                                useNewUrlParser: true,
+                                                useUnifiedTopology: true, 
+                                                serverApi: ServerApiVersion.v1 
+                                            }), db_name, collection);
+
     await m.init();
 
     switch (req.method) {
