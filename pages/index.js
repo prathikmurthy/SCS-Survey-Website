@@ -7,31 +7,25 @@ import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
 import { useState, createContext, useContext } from 'react'
 import { input } from '../data/setup.js';
+const axios = require('axios');
 
 
 // import MyDialog from '../components/Dialog.js';
 
 
 export default function App() {
+  axios.get('/api/db').then(function (response) {
+    console.log(response);
+  }).catch(function (error) {
+    console.log(error);
+  })
+
   // return( <></> ) 
   const [count, setCount] = useState( 0 );
   const [list, setList] = useState( {} );
   const [grid, setGrid] = useState( {} );
   // const [init, setInit] = useState( 0 );
   // var selections = {};
-
-  let x = []
-  for (var i = 0; i < 5; i++) {
-    x.push(new PlanningIdea('######', 'xxxxxxxxxx', 'x', 'x'))
-  }
-  let y = []
-  for (var i = 0; i < 3; i++) {
-    y.push(new PlanningIdea('######', 'xxxxxxxxxx', 'x', 'x'))
-  }
-  let z = []
-  for (var i = 0; i < 6; i++) {
-    z.push(new PlanningIdea('######', 'xxxxxxxxxx', 'x', 'x'))
-  }
 
   let dict = []
   for (var i = 0; i < input.length; i++) {
@@ -42,7 +36,7 @@ export default function App() {
     }
   }
 
-  // console.log(Object.keys(dict));
+  console.log(Object.keys(dict));
 
   
 
