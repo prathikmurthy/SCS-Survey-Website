@@ -30,7 +30,7 @@ export default async function handler(req, res) {
                 }
             }
 
-            fs.writeFileSync('data/input_data.json', JSON.stringify(input_data));
+            fs.writeFileSync('/data/input_data.json', JSON.stringify(input_data));
 
             
             res.status(200).json( {res: 'Success'})
