@@ -2,6 +2,7 @@
 // import { input_data } from '../../data/input.js'
 import input_data from '../../data/input_data.json'
 const fs = require('fs')
+const path = require('path')
 
 export default async function handler(req, res) {
     
@@ -31,12 +32,12 @@ export default async function handler(req, res) {
             }
             
             try {
-                // fs.writeFileSync(path.join('data', 'input_data.json'), JSON.stringify(input_data));
-                fs.writeFileSync('../../data/input_data.json', JSON.stringify(input_data));
+                fs.writeFileSync(path.join('/data/', 'input_data.json'), JSON.stringify(input_data));
+                // fs.writeFileSync('../../data/input_data.json', JSON.stringify(input_data));
             } catch (e) {
                 console.log(e);
             }
-
+            
             
             res.status(200).json( {res: 'Success'})
             

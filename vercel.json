@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/inputdb.js": {
+        "includeFiles": "data/**"
+      }
+    }
+  }
