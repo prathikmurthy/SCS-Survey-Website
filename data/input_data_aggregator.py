@@ -16,21 +16,52 @@ exclude = ["AK5ER2SR",
 
 categories = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Support Space', 'Semi-Private Space', 'Meeting Spaces', 'Workplace']
 
-output = {}
-for category in categories:
-    output[category] = []
+rec = {}
 
+# for cat in categories:
+#     rec[cat] = 9
+
+# print(json.dumps(rec, sort_keys=True, indent=4, separators=(',', ': ')))
+
+views = {}
+
+with open("planning idea views.csv", "r") as f:
+    for line in f:
+        try:
+            if line.strip().split(",")[0] not in exclude:
+                views[line.strip().split(",")[0]] = int(line.strip().split(",")[1])
+        except:
+            pass
+
+# views = dict(sorted(views.items(), key = lambda kv: kv[1]))
+output = []
+for category in categories:
+
+    output[category] = []
+    
+    
+
+# # print(output)
 for filename in os.scandir(directory):
-    if filename.is_file() and filename.path[:8] not in exclude:
+    # print(filename.name[:8])
+    if filename.is_file() and filename.name[:8] not in exclude:
         fp = open(filename.path, 'r')
         json_data = json.load(fp)
         fp.close() 
-        mdict = {}
-        mdict['id'] = json_data["application_id"]
-        mdict['notes'] = ""
-        mdict['url'] = json_data["planning_ideas_url"]
-        mdict['image'] = json_data["thumbnail"]
-        output[json_data['primary_category']].append(mdict)
+        try:
+            mdict = {}
+            mdict['id'] = json_data["application_id"]
+            mdict['notes'] = ""
+            mdict['url'] = json_data["planning_ideas_url"]
+            mdict['image'] = json_data["thumbnail"]
+            mdict['category'] = json_data["primary_category"]
+            mdict['views'] = views[json_data['application_id']]
+            output.append(mdict)
+        except:
+            pass
+
+output = sorted(output, key=lambda x: x['views'], reverse=True)
+# print(output)
 
 
 with open('output.txt', 'w') as f:

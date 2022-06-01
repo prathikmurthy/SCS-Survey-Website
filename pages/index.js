@@ -6,7 +6,7 @@ import TileGrid from '../components/TileGrid.js';
 import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
 import { useState, createContext, useContext } from 'react'
-import { input } from '../data/setup.js';
+import { input_data, input_rec_counts } from '../data/input.js';
 const axios = require('axios');
 
 
@@ -15,34 +15,26 @@ const axios = require('axios');
 
 export default function App() {
   axios.get('/api/db').then(function (response) {
-    console.log(response);
+    // console.log(response);
   }).catch(function (error) {
-    console.log(error);
+    // console.log(error);
   })
 
-  // return( <></> ) 
   const [count, setCount] = useState( 0 );
   const [list, setList] = useState( {} );
   const [grid, setGrid] = useState( {} );
-  // const [init, setInit] = useState( 0 );
-  // var selections = {};
 
-  let dict = []
-  for (var i = 0; i < input.length; i++) {
-    dict[input[i]['cat']] = [input[i]['rec'],[]];
-    for (var j = 0; j < input[i]['data'].length; j++) {
-      // console.log(Object.values(input[i]['data'][j]))
-      dict[input[i]['cat']][1].push(new PlanningIdea(...Object.values(input[i]['data'][j])));
+  let dict = {}
+
+
+  for (var i = 0; i < input_data.length; i++) {
+    try {
+      dict[input_data[i]['category']].push(new PlanningIdea(...Object.values(input_data[i])))
+    } catch (e) {
+      dict[input_data[i]['category']] = []
+      dict[input_data[i]['category']].push(new PlanningIdea(...Object.values(input_data[i])))
     }
   }
-
-  console.log(Object.keys(dict));
-
-  
-
-  // console.log(dict['Category 1']);
-
-  // Build()
 
   return (
 
@@ -51,7 +43,7 @@ export default function App() {
         <TitleBar />
         <div className="pb-20">
         
-        { [Object.keys(dict).map( x => <TileGrid key={x} title={x} rec={dict[x][0]} arr={dict[x][1]}/>)] }
+        { [Object.keys(dict).map( x => <TileGrid key={x} title={x} rec={input_rec_counts[x]} arr={dict[x]}/>)] }
 
         {/* <TileGrid title="Category 1" rec="3" arr={x}/>
         <TileGrid title="Category 2" rec="7" arr={y}/>
