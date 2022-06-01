@@ -29,8 +29,12 @@ export default async function handler(req, res) {
 
                 }
             }
-
-            fs.writeFileSync(path.join('data', 'input_data.json'), JSON.stringify(input_data));
+            
+            try {
+                fs.writeFileSync(path.join('data', 'input_data.json'), JSON.stringify(input_data));
+            } catch (e) {
+                console.log(e);
+            }
 
             
             res.status(200).json( {res: 'Success'})
