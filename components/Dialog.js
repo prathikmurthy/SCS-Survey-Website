@@ -38,7 +38,7 @@ const MyDialog = () => {
             // alert("Submission Successful! You can now close this page, thank you!")
         }).catch(function (error) {
             // alert("ERROR: An error occured while processing your submission, please try again later.")
-            alert(error)
+            alert(error.response.data)
         })
 
         
