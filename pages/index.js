@@ -6,19 +6,26 @@ import TileGrid from '../components/TileGrid.js';
 import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
 import { useState, createContext, useContext } from 'react'
-import { input_data, input_rec_counts } from '../data/input.js';
+// import { input_data, input_rec_counts } from '../data/input.js';
 const axios = require('axios');
+
+import input_rec_counts from '../data/input_rec_counts.json'
+import input_data from '../data/input_data.json'
+
 
 
 // import MyDialog from '../components/Dialog.js';
 
 
 export default function App() {
-  axios.get('/api/db').then(function (response) {
-    // console.log(response);
-  }).catch(function (error) {
-    // console.log(error);
-  })
+  // axios.get('/api/db').then(function (response) {
+  //   // console.log(response);
+  // }).catch(function (error) {
+  //   // console.log(error);
+  // })
+
+
+  // console.log(data)
 
   const [count, setCount] = useState( 0 );
   const [list, setList] = useState( {} );
@@ -29,7 +36,9 @@ export default function App() {
 
   for (var i = 0; i < input_data.length; i++) {
     try {
-      dict[input_data[i]['category']].push(new PlanningIdea(...Object.values(input_data[i])))
+      if (input_data[i]['category'] != 'DELETE') {
+        dict[input_data[i]['category']].push(new PlanningIdea(...Object.values(input_data[i])))
+      }
     } catch (e) {
       dict[input_data[i]['category']] = []
       dict[input_data[i]['category']].push(new PlanningIdea(...Object.values(input_data[i])))

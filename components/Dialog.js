@@ -22,15 +22,25 @@ const MyDialog = () => {
     }
     
     const API_Post = () => {
-        console.log(JSON.stringify(list));
-        axios.post('/api/db', {
-            id: document.getElementById('input').value,
+        // console.log(JSON.stringify(list));
+        // axios.post('/api/db', {
+        //     id: document.getElementById('input').value,
+        //     data: JSON.parse(JSON.stringify(list)),
+        // }).then(function (response) {
+        //     alert("Submission Successful! You can now close this page, thank you!")
+        // }).catch(function (error) {
+        //     alert("ERROR: An error occured while processing your submission, please try again later.")
+        // })
+
+        axios.delete('/api/data', {
             data: JSON.parse(JSON.stringify(list)),
         }).then(function (response) {
             alert("Submission Successful! You can now close this page, thank you!")
         }).catch(function (error) {
             alert("ERROR: An error occured while processing your submission, please try again later.")
         })
+
+        
     }
 
     let out = []
