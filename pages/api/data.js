@@ -31,9 +31,10 @@ export default async function handler(req, res) {
             }
             
             try {
-                fs.writeFileSync(path.join('data', 'input_data.json'), JSON.stringify(input_data));
+                // fs.writeFileSync(path.join('data', 'input_data.json'), JSON.stringify(input_data));
+                fs.writeFileSync('../../data/input_data.json', JSON.stringify(input_data));
             } catch (e) {
-                console.log(e);
+                console.log("hello");
             }
 
             
