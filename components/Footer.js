@@ -2,7 +2,6 @@ import { react } from 'react';
 import SelectionCount from './SelectionCount.js';
 const axios = require('axios');
 import { ReactDOM } from 'react-dom';
-import Alert from './Alert.js';
 import MyDialog from './Dialog.js';
 
 
