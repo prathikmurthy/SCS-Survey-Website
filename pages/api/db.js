@@ -50,11 +50,22 @@ export default async function handler(req, res) {
                                                         useNewUrlParser: true,
                                                         useUnifiedTopology: true, 
                                                         serverApi: ServerApiVersion.v1 
-                                                    }), db_name, input_collection);
+                                                    }), db_name, collection);
         
             await m.init();
+            
+            const data = await m.find({})
 
-            res.status(200).json( {res: await m.find({ _id: 'INPUTDATA' }) })
+            let out = [];
+            
+            console.log(req.body);
+            for (var doc in data) {
+                for (var obj in doc['data'][req.body]) {
+                    out.push(obj)
+                }
+            }
+
+            res.status(200).json( {res: out})
             break;
 
         }

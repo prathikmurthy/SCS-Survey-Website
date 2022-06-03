@@ -16,7 +16,18 @@ export default async function handler(req, res) {
 
     await m.init();
 
-    const o = await m.find({})
+    const data = await m.find({})
 
-    res.status(200).json( o )
+    let out = [];
+
+    // console.log(data)
+    for (var i = 0; i < data.length; i++) {
+        // console.log(data[i]['data']);
+        for (var obj in data[i]['data'][req.body]) {
+            out.push(data[i]['data'][req.body][obj]);
+        }
+    }
+    
+
+    res.status(200).json( {res: out})
 }

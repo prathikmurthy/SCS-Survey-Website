@@ -4,7 +4,7 @@ import TitleBar from '../components/TitleBar.js';
 import TileGrid from '../components/TileGrid.js';
 import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
-import NavBar from '../components/NavBar.js';
+import SurveyNavBar from '../components/NavBar.js';
 import { useState, createContext, useContext } from 'react'
 const axios = require('axios');
 
@@ -48,7 +48,7 @@ export default function App() {
 
     <UserContext.Provider value={{count, setCount, list, setList, grid, setGrid}}>
       <div>
-        <NavBar />
+        {/* <SurveyNavBar /> */}
         <TitleBar />
         <div className="pb-20">
         
