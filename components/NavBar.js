@@ -10,24 +10,28 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const spaces = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Support Space', 'Semi-Private Space', 'Meeting Spaces', 'Workplace'].sort()
+// const spaces = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Support Space', 'Semi-Private Space', 'Meeting Spaces', 'Workplace'].sort()
+const spaces = ['Meeting Spaces', 'Outdoor', 'Private Office', 'Private Space', '🔝', 'Semi-Private Space', 'Support Space', 'Workplace', 'Workstation']
 
 export function SurveyNavBar() {
     
     return (
-        <></>
-        // <header className="min-w-full pl-5 pr-5 bg-[#191919] flex flex-row sticky top-0 z-50">
-        //     {spaces.map((item) =>
-        //         <p className="text-white font-bold p-5 hover:border-b-2 border-black">
-        //             <Link activeclass='active' to={item} smooth={true} duration={500}>
-        //             {/* <button className="text-white font-bold p-5 hover:border-b-2 border-black" onClick={link(item)}>
-        //                 {item}
-        //             </button> */}
-        //             {item}
-        //             </Link>
-        //         </p>
-        //     )}
-        // </header>
+        <header className="absolute top-0 sticky z-50">
+
+        <div className="bg-[#191919] z-50 relative">
+            <ul className="flex flex-row justify-between ml-10 mr-10">
+                {spaces.map(x => {
+                    return (
+                        <li className="m-5 text-center text-white font-bold">
+                            <a href={x != '🔝' ? '#'+x.split(" ").join('') : '#top'}>
+                                {x}
+                            </a>
+                        </li>
+                    )
+                })}
+            </ul>
+        </div>
+        </header>
     )
 }
 
@@ -58,8 +62,10 @@ export function ResultsNavBar() {
     }
 
     return (
+        <header className="absolute top-0 sticky z-50">
+
         <div className="pl-5 pr-5 bg-[#191919] z-50 relative">
-            <ul className="flex flex-row">
+            <ul className="flex flex-row justify-between max-w-xl m-auto">
                 <li className="p-5 text-white font-bold">
                     <Link href='/results/'>
                         <a>Home</a>
@@ -69,7 +75,6 @@ export function ResultsNavBar() {
                     <Link href='/results/all'>
                         <a>Spaces</a>
                     </Link>
-                    {/* {dropdown && <Dropdown className=""/>} */}
                     <Transition
                         show={dropdown}
                         enter="transition ease-in-out duration-100 transform"
@@ -87,23 +92,8 @@ export function ResultsNavBar() {
                     </Link>
                 </li>
                 
-                {/* {items.map((item) => <li className="p-5 text-white font-bold"><Link href={"/results/"+item.link}><a>{item.name}</a></Link></li>)} */}
-                {/* <li>
-                    <Link href="/results">
-                        <a>Home</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/results/test1">
-                        <a>test1</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/results/test2">
-                        <a>test2</a>
-                    </Link>
-                </li> */}
             </ul>
         </div>
+                        </header>
     )
 }

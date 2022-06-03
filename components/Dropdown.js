@@ -11,7 +11,7 @@ const spaces = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Su
 
 export default function Dropdown() {
     return (
-        <div className="absolute bg-green-600 p-5 -left-12 top-4 shadow-inner rounded-t-none text-center rounded drop-shadow-2xl">
+        <div className="absolute bg-green-600 p-5 -left-12 top-5 shadow-inner rounded-t-none text-center rounded drop-shadow-2xl">
 
             <ul>
                 {spaces.map((space) => {

@@ -7,9 +7,11 @@ import PlanningIdea from '../../components/PlanningIdea.js';
 const axios = require('axios');
 import useSWR from 'swr';
 import {react, useState, useContext, createContext, useEffect} from 'react'
+import CircularProgress from '@mui/material/CircularProgress';
+
  
 
-export default function Category() {
+export default function Category({id}) {
     const [count, setCount] = useState( 0 );
 
     // list = array of selected tiles
@@ -19,8 +21,8 @@ export default function Category() {
     const [ x, setX ] = useState(undefined)
     // const [y, setY] = useState(undefined);
     
-    const router = useRouter()
-    const { id } = router.query
+    // const router = useRouter()
+    // const { id } = router.query
 
     useEffect(() => {
         if (id) {
@@ -31,15 +33,17 @@ export default function Category() {
     }, [id])
     
 
-    // useEffect(() => {
+    // useEffect(() => {`   1``
         //     if (id) setX(undefined)
     // }, [id])
     
-    // console.log(x)
+    // console.log(router.query)
 
 
-    const fetcher = (url) => fetch(url, {method: 'POST', body: id}).then((res) => res.json());
-    const { data, error } = useSWR(id ? '/api/test' : null, fetcher);
+    const fetcher = (url) => fetch(url).then((res) => res.json());
+    const { data, error } = useSWR(id ? '/api/results/'+id : null, fetcher);
+
+    console.log('/api/results/'+id);
 
     useEffect(() => {
         if (data) { 
@@ -47,7 +51,7 @@ export default function Category() {
         };
     }, [data])
     
-    if (!data || !x) return "Loading...";
+    if (!data || !x) return <div className="grid place-items-center h-screen"><CircularProgress sx={{color:'success.main'}} className="inset-0"/></div>;
     // if (!data || data['res'].length == 0) return "Loading...";
     
     console.log(x)
@@ -65,5 +69,15 @@ export default function Category() {
         </UserContext.Provider>
     )
 }
+
+
+export async function getServerSideProps(ctx) {
+    const { id } = ctx.query;
+    return {
+      props: {
+        id,
+      },
+    };
+  }
 
 export const UserContext = createContext();

@@ -20,12 +20,12 @@ export default function ResultTileGrid(props) {
 
 
     return (
-        <div className="container mx-auto pt-20 pl-10 pr-10">
+        <div className="container mx-auto pt-10 pl-10 pr-10">
         <div className="grid grid-cols-1 divide-y divide-slate-700">
-        <div className="flex flex-row justify-between">
-        <h1 className="text-2xl font-bold text-white divide-white pb-3 ">{props.title} • {props.rec} Recommended</h1>
-        <h1 className="text-2xl font-bold text-green-500 divide-white pb-3">{list.length} Currently Selected</h1>
-        </div>
+        {/* <div className="flex flex-row justify-between"> */}
+        <h1 className="text-2xl font-bold text-white divide-white pb-3 text-center">{props.title == "all" ? 'All Results' : props.title}</h1>
+        {/* <h1 className="text-2xl font-bold text-green-500 divide-white pb-3">{list.length} Currently Selected</h1> */}
+        {/* </div> */}
         
         <div className="grid grid-cols-3 gap-4 pt-3">
 
