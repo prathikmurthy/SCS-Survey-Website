@@ -4,7 +4,7 @@ import TitleBar from '../components/TitleBar.js';
 import TileGrid from '../components/TileGrid.js';
 import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
-import NavBar from '../components/NavBar.js';
+import {SurveyNavBar} from '../components/NavBar.js';
 import { useState, createContext, useContext } from 'react'
 const axios = require('axios');
 
@@ -24,10 +24,12 @@ export default function App() {
 
   // console.log(data)
 
+
+
+  
   const [count, setCount] = useState( 0 );
   const [list, setList] = useState( {} );
   const [grid, setGrid] = useState( {} );
-
   let dict = {}
 
 
@@ -48,12 +50,12 @@ export default function App() {
 
     <UserContext.Provider value={{count, setCount, list, setList, grid, setGrid}}>
       <div>
-        <NavBar />
+        <SurveyNavBar />
         <TitleBar />
         <div className="pb-20">
         
-        { [Object.keys(dict).map( x => <TileGrid id={x} key={x} title={x} rec={input_rec_counts[x]} arr={dict[x]}/>)] }
-
+        { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
+        <p id="Meeting">Hello World</p>
         {/* <TileGrid title="Category 1" rec="3" arr={x}/>
         <TileGrid title="Category 2" rec="7" arr={y}/>
         <TileGrid title="Category 3" rec="2" arr={z}/> */}

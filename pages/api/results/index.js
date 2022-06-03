@@ -1,4 +1,4 @@
-import Mongo from '../../components/MongoDB.js';
+import Mongo from '../../../components/MongoDB.js';
 require('dotenv').config();
 const id = process.env.MONGO_API;
 const db_name = "Planning-Idea-Survey";
@@ -20,11 +20,14 @@ export default async function handler(req, res) {
 
     let out = [];
 
-    // console.log(data)
+    console.log("TESTEST")
     for (var i = 0; i < data.length; i++) {
         // console.log(data[i]['data']);
-        for (var obj in data[i]['data'][req.body]) {
-            out.push(data[i]['data'][req.body][obj]);
+        for (var space in data[i]['data']) {
+            // console.log(space)
+            for (var obj in data[i]['data'][space]) {
+                out.push(data[i]['data'][space][obj]);
+            }
         }
     }
     
