@@ -22,7 +22,7 @@ export function SurveyNavBar() {
             <ul className="flex flex-row justify-between ml-10 mr-10">
                 {spaces.map(x => {
                     return (
-                        <li className="m-5 text-center text-white font-bold">
+                        <li key={x} className="m-5 text-center text-white font-bold">
                             <a href={x != '🔝' ? '#'+x.split(" ").join('') : '#top'}>
                                 {x}
                             </a>

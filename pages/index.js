@@ -54,7 +54,7 @@ export default function App() {
         <TitleBar />
         <div className="pb-20">
         
-        { [Object.keys(dict).map( x => <section id={x.split(" ").join('')}><TileGrid key={x} title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
+        { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
         <p id="Meeting">Hello World</p>
         {/* <TileGrid title="Category 1" rec="3" arr={x}/>
         <TileGrid title="Category 2" rec="7" arr={y}/>
