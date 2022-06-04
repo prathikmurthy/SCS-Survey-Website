@@ -15,17 +15,6 @@ import input_data from '../data/input_data.json'
 
 
 export default function App() {
-  // axios.get('/api/db').then(function (response) {
-  //   // console.log(response);
-  // }).catch(function (error) {
-  //   // console.log(error);
-  // })
-
-
-  // console.log(data)
-
-
-
   
   const [count, setCount] = useState( 0 );
   const [list, setList] = useState( {} );
@@ -55,22 +44,16 @@ export default function App() {
         <div className="pb-20">
         
         { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
-        <p id="Meeting">Hello World</p>
-        {/* <TileGrid title="Category 1" rec="3" arr={x}/>
-        <TileGrid title="Category 2" rec="7" arr={y}/>
-        <TileGrid title="Category 3" rec="2" arr={z}/> */}
+
         </div>
         <Footer />
         
       </div>
     </UserContext.Provider>
 
-
-
   );
 }
 
 export const UserContext = createContext();
-// export default App;
 
 
