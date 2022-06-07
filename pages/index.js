@@ -7,6 +7,8 @@ import PlanningIdea from '../components/PlanningIdea.js';
 import {SurveyNavBar} from '../components/NavBar.js';
 import { useState, createContext, useContext } from 'react'
 const axios = require('axios');
+import scs from '../res/scs-logo.png'
+import imo from '../res/imo-logo.png'
 
 
 import input_rec_counts from '../data/input_rec_counts.json'
@@ -38,7 +40,7 @@ export default function App() {
   return (
 
     <UserContext.Provider value={{count, setCount, list, setList, grid, setGrid}}>
-      <div>
+      <div id="info">
         <SurveyNavBar />
         <TitleBar />
         <div className="pb-20">
@@ -46,6 +48,13 @@ export default function App() {
         { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
 
         </div>
+        <div className="flex flex-row mt-10 max-w-xl m-auto">
+          <Image src={scs} layout='intrinsic'></Image>
+          <button className="bg-white rounded-full text-xl mt-5 mb-5 pl-1 pr-1 ml-20 mr-20 text-white">\t</button>
+          <Image src={imo} layout='intrinsic'></Image>
+        </div>
+                
+        <p className="text-white text-xs xl:text-md text-center pt-4 pb-4">Created by the Innovation Management Office - 2022</p>
         <Footer />
         
       </div>
