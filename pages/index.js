@@ -9,6 +9,8 @@ import { useState, createContext, useContext } from 'react'
 const axios = require('axios');
 import scs from '../res/scs-logo.png'
 import imo from '../res/imo-logo.png'
+import { Scrollbars } from 'react-custom-scrollbars';
+
 
 
 import input_rec_counts from '../data/input_rec_counts.json'
@@ -35,11 +37,12 @@ export default function App() {
     }
   }
 
-  console.log(Object.keys(dict));
+  // console.log(Object.keys(dict));
 
-  return (
+  return ( 
 
     <UserContext.Provider value={{count, setCount, list, setList, grid, setGrid}}>
+
       <div id="info">
         <SurveyNavBar />
         <TitleBar />

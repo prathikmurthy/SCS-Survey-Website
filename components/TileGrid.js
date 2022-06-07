@@ -7,14 +7,12 @@ export default function TileGrid(props) {
   const {list, setList, grid, setGrid} = useContext(UserContext);
   
   if (grid[props.title] == undefined) {
-        console.log(props.arr.length)
+        // console.log(props.arr.length)
     
         list[props.title] = []
         grid[props.title] = []
         
         for (let x = 0; x < props.arr.length; x++) {
-            // const x = Math.round((Math.random() * 1000));
-            // const x = props.arr[x].name;
             grid[props.title].push(
               <div className="flex justify-center" key={x}>
                 <Tile pi={props.arr[x]} grid={props.title}/>
