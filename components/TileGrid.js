@@ -29,7 +29,7 @@ export default function TileGrid(props) {
         <div className="container mx-auto pt-20 pl-10 pr-10">
         <div className="grid grid-cols-1 divide-y divide-slate-700">
         <div className="flex flex-row justify-between">
-        <h1 className="text-2xl font-bold text-white divide-white pb-3 ">{props.title} • {props.rec} Recommended</h1>
+        <h1 className="text-2xl font-bold text-white divide-white pb-3 ">{props.title}</h1>
         <h1 className="text-2xl font-bold text-green-500 divide-white pb-3">{list[props.title].length} Currently Selected</h1>
         </div>
         

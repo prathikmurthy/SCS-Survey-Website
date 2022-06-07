@@ -25,9 +25,9 @@ background: linear-gradient(to right, #182848, #4b6cb7);  */
   
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 a {
   color: inherit;
