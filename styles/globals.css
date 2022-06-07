@@ -29,6 +29,15 @@ background: linear-gradient(to right, #182848, #4b6cb7);  */
   display: none;
 } */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 5px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -10,7 +10,7 @@ const DialogTitle = DialogPrimitive.Title;
 const DialogDescription = DialogPrimitive.Description;
 const DialogClose = DialogPrimitive.Close;
 
-const MyDialog = () => {
+const SubmissionDialog = () => {
     
     const {list, setList} = useContext(UserContext);
     
@@ -22,7 +22,6 @@ const MyDialog = () => {
     }
     
     const API_Post = () => {
-        // console.log(JSON.stringify(list));
         axios.post('/api/db', {
             id: document.getElementById('input').value,
             data: JSON.parse(JSON.stringify(list)),
@@ -31,17 +30,6 @@ const MyDialog = () => {
         }).catch(function (error) {
             alert("ERROR: An error occured while processing your submission, please try again later.")
         })
-
-        // axios.delete('/api/data', {
-        //     data: JSON.parse(JSON.stringify(dat['data'])),
-        // }).then(function (response) {
-        //     // alert("Submission Successful! You can now close this page, thank you!")
-        // }).catch(function (error) {
-        //     // alert("ERROR: An error occured while processing your submission, please try again later.")
-        //     alert(error)
-        // })
-
-        
     }
 
     let out = []
@@ -50,16 +38,11 @@ const MyDialog = () => {
             <div className="grid grid-cols-2 p-2 ">
                 <p className="font-bold text-left pl-5">{Object.keys(list)[i]}</p>
                 <div>
-                    {/* { [list[Object.keys(list)[i]].map(x => <p key={x} className="text-right pr-5 text-l xl:text-xl">{x.id}</p>)] } */}
-                    {/* { [list[Object.keys(list)[i]].map(x => )] } */}
                     <p className="text-right pr-5 text-green-500 font-bold text-l xl:text-xl">{list[Object.keys(list)[i]].length} Selected</p>
                 </div>
             </div>
             
             )
-        // for (var j = 0; j < list[Object.keys(list)[i]].length; j++) {
-        // //     out.push(<p>{[list[Object.keys(list)[i]][j].id] + ':' + Object.keys(list)[i]}</p>)
-        // // }
     }
 
     return (
@@ -102,21 +85,4 @@ const MyDialog = () => {
     )
 }
 
-export default MyDialog;
-
-
-// export default function MyDialog() {
-//   <Dialog.Root>
-//     <Dialog.Trigger asChild>
-//         <button className="text-white text-3xl bg-white">Open Menu</button>
-//     </Dialog.Trigger>
-//     <Dialog.Portal>
-//       <Dialog.Overlay />
-//       <Dialog.Content>
-//         <Dialog.Title>Hello World</Dialog.Title>
-//         <Dialog.Description>Test Test Test Test Test Test Test Test Test</Dialog.Description>
-//         <Dialog.Close />
-//       </Dialog.Content>
-//     </Dialog.Portal>
-//   </Dialog.Root>
-// }
+export default SubmissionDialog;
