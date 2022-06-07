@@ -36,6 +36,7 @@ background: linear-gradient(to right, #182848, #4b6cb7);  */
 ::-webkit-scrollbar-thumb {
   background: #16a34a;
   border-radius: 5px;
+  transition: all 0.5s ease;
 }
 
 a {

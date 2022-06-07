@@ -51,9 +51,9 @@ export default function App() {
         { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
 
         </div>
-        <div className="flex flex-row mt-10 max-w-xl m-auto">
+        <div className="grid grid-cols-3 mt-10 max-w-2xl max-h-xl m-auto">
           <Image src={scs} layout='intrinsic'></Image>
-          <button className="bg-white rounded-full text-xl mt-5 mb-5 pl-1 pr-1 ml-20 mr-20 text-white">\t</button>
+          <button className="bg-green-500 rounded-full text-xl ml-24 mr-24 mt-10 mb-10 text-green-500">\t</button>
           <Image src={imo} layout='intrinsic'></Image>
         </div>
                 
