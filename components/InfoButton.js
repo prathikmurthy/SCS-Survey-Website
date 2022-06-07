@@ -32,7 +32,7 @@ export const InfoDialog = () => {
                             <p className="text-white text-sm xl:text-xl text-center ">This survey has been created to determine the 50 most popular Steelcase Space Planning Ideas, please scroll through the ideas shown on this page and choose your personal favorites.</p>
                             <p className="text-white text-sm xl:text-xl text-center pt-2">The Planning Idea tiles have not been sorted in any particular order. A tile can be selected by clicking on any of the black space contained within the tile.</p>
                             <p className="text-white text-sm xl:text-xl text-center pt-2">For further information, clicking on the provided image within the tile will take you to the Steelcase website with further details.</p>
-                            <p className="text-white text-sm xl:text-xl text-center pt-2 pb-3">After you've made your selections, please click the <span className="text-green-400">Submit</span> button at the bottom of the screen. This information screen can be shown again by clicking the <span className="text-green-400">?</span> button also at the bottom of the screen.</p>
+                            <p className="text-white text-sm xl:text-xl text-center pt-2 pb-3">After you have made your selections, please click the <span className="text-green-400">Submit</span> button at the bottom of the screen. This information screen can be shown again by clicking the <span className="text-green-400">?</span> button also at the bottom of the screen.</p>
                         </DialogDescription>
                         
                         {/* <div className="grid grid-cols-2 pt-3 xl:pt-10">
