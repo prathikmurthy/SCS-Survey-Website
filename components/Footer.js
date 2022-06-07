@@ -1,12 +1,31 @@
-import { react } from 'react';
+import { react, useState, useEffect } from 'react';
 import SelectionCount from './SelectionCount.js';
 const axios = require('axios');
 import SubmissionDialog from './Dialog.js';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { debounce } from '../utilities/debounce.js'
 
 export default function Footer(props) {
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(false);
+
+    const handleScroll = debounce(() => {
+        const currentScrollPos = window.pageYOffset;
+    
+        setVisible(currentScrollPos > 800);
+    
+        setPrevScrollPos(currentScrollPos);
+    }, 10);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => window.removeEventListener('scroll', handleScroll);
+    
+    }, [prevScrollPos, visible, handleScroll]);
+
     return (
-        <footer className="w-full text-white font-bold p-4 sticky bottom-0 bg-[#191919]/75 backdrop-blur-md border-t-4 border-green-600">
+        <footer className="w-full text-white font-bold p-4 sticky bg-[#191919]/75 backdrop-blur-md border-t-4 border-green-600 transition-all ease-in-out" style={{bottom: visible ? '0' : '-80px'}}>
             <div className="flex justify-around">
                 <SelectionCount />
                 <div>
