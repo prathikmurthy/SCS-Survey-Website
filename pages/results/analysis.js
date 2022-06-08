@@ -1,4 +1,4 @@
-import { ResultsNavBar } from "../../components/NavBar"
+import { ResultsNavBar } from "../../components/ResultsNavBar"
 
 export default function Analysis() {
     return (

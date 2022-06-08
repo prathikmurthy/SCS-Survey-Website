@@ -9,6 +9,7 @@ export default class PlanningIdea {
         this.notes = notes;
         this.url = url;
         this.views = views;
+        this.votes = 0;
     }
 
 }
