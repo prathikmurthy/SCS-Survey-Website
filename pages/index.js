@@ -4,7 +4,7 @@ import TitleBar from '../components/TitleBar.js';
 import TileGrid from '../components/TileGrid.js';
 import Footer from '../components/Footer.js';
 import PlanningIdea from '../components/PlanningIdea.js';
-import {SurveyNavBar} from '../components/NavBar.js';
+import {SurveyNavBar} from '../components/SurveyNavBar.js';
 import { useState, createContext, useContext } from 'react'
 const axios = require('axios');
 import scs from '../res/scs-logo.png'

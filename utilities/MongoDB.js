@@ -13,12 +13,26 @@ export default class Mongo {
         this.collection = this.db.collection(this.collection_name);
     }
 
+    async getcol(col) {
+        return this.db.collection(col)
+    }
+
+    async setcol(col) {
+        this.collection = this.db.collection(col)
+    }
+
     async close() {
         await this.client.close();
     }
 
     async add(doc) {    
         await this.collection.insertOne(doc);
+    }
+
+    async replace(filter, query) {
+        await this.collection.replaceOne(
+            filter, query
+        )
     }
 
     async find(query) {

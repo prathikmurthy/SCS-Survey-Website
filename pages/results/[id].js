@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { ResultsNavBar } from "../../components/NavBar"
+import { ResultsNavBar } from "../../components/ResultsNavBar"
 import TitleBar from '../../components/TitleBar.js';
 import ResultTileGrid from '../../components/ResultTileGrid.js';
 import Footer from '../../components/Footer.js';

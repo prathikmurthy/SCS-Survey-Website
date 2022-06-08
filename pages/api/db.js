@@ -1,10 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import Mongo from '../../utilities/MongoDB.js';
 require('dotenv').config();
 const id = process.env.MONGO_API;
 const db_name = "Planning-Idea-Survey";
 const collection = "00" 
 const input_collection = "01"
+import Mongo from '../../utilities/MongoDB.js';
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 export default async function handler(req, res) {

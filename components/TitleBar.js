@@ -12,6 +12,7 @@ export default function TitleBar() {
                 <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">The Planning Idea tiles have not been sorted in any particular order. A tile can be selected by clicking on any of the black space contained within the tile.</p>
                 <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">For further information, clicking on the provided image within the tile will take you to the Steelcase website with further details.</p>
                 <p className="text-white xl:text-2xl text-md text-center pt-2">After you have made your selections, please click the <span className="text-green-500">Submit</span> button at the bottom of the screen. This information screen can be shown again by clicking the <span className="text-green-500">?</span> button also at the bottom of the screen.</p>
+                <p className="text-gray-400 xl:text-lg text-md text-center pt-10">If you have any questions, please contact <span className="text-green-500">pmurthy@steelcase.com</span></p>
                 
             </div>
         </div>
