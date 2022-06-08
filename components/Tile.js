@@ -34,6 +34,8 @@ export default function Tile(props) {
         }
     }
 
+    console.log(color)
+
     return (
         <div className = {`w-max-md pt-5 rounded-2xl bg-${color} hover:scale-110 pl-2 pr-2 transition ease-in-out` } >
             <div className="relative">
