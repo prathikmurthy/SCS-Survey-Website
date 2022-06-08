@@ -4,15 +4,15 @@ import Image from 'next/image'
 
 export default function Tile(props) {
 
-    const [color, setColor] = useState('[#191919]')
+    const [color, setColor] = useState('bg-[#191919]')
 
 
     const update = () => {
-        if (color == '[#191919]') {
-            setColor('green-500')
+        if (color == 'bg-[#191919]') {
+            setColor('bg-green-500')
             add()
         } else {
-            setColor('[#191919]')
+            setColor('bg-[#191919]')
             sub()
         }
     }
@@ -37,7 +37,7 @@ export default function Tile(props) {
     console.log(color)
 
     return (
-        <div className = {`w-max-md pt-5 rounded-2xl bg-${color} hover:scale-110 pl-2 pr-2 transition ease-in-out` } >
+        <div className = {`w-max-md pt-5 rounded-2xl ${color} hover:scale-110 pl-2 pr-2 transition ease-in-out` } >
             <div className="relative">
                 <img src={props.pi.image} className="w-full rounded-xl"></img>                
                 <button className="absolute inset-0 pl-4 pr-4 pt-2 pb-2 text-white text-center self-center align-middle font-bold rounded opacity-0 hover:opacity-100 bg-black/50 transition ease-in-out"> <a href={props.pi.url} target="_blank" rel="noreferrer">Details</a> </button> 
