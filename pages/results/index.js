@@ -25,7 +25,7 @@ export default function Home() {
     
     
     function findPopularCat(votes_by_cat) {
-        // console.log(votes_by_cat)
+        console.log(votes_by_cat)
         var out = ""
         var max = undefined
         for (var cat in votes_by_cat) {
@@ -52,8 +52,12 @@ export default function Home() {
             <div className="pt-2 max-w-xl m-auto">
                 <p className="xl:text-6xl text-2xl text-green-500 font-bold text-center xl:pb-10 xl:pt-10 pt-0 pb-0">At A Glance...</p>
                 <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">There have been <span className="text-green-500">{count['res'].length}</span> unique submission(s) since this survey went live.</p>
-                <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">Of those submission(s), <span className="text-green-500">{votes}</span> total votes have been cast for <span className="text-green-500">{mdata['res'].length}</span> unique planning ideas.</p>
-                <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">The most popular category amongst voters appears to be <span className="text-green-500">{findPopularCat(votes_by_cat)[0]}</span>, with <span className="text-green-500">{findPopularCat(votes_by_cat)[1]}</span> total votes.</p>
+                {
+                    count['res'].length > 0 ? <div><p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">Of those submission(s), <span className="text-green-500">{votes}</span> total votes have been cast for <span className="text-green-500">{mdata['res'].length}</span> unique planning ideas.</p>
+                    <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">The most popular category amongst voters appears to be <span className="text-green-500">{findPopularCat(votes_by_cat)[0]}</span>, with <span className="text-green-500">{findPopularCat(votes_by_cat)[1]}</span> total votes.</p>
+                    </div> : null
+                }
+                
                 <p className="text-gray-400 xl:text-lg text-md text-center pt-5">This page will automatically update when new submissions are created.</p>
                 <p className="text-gray-400 xl:text-lg text-md text-center pt-5">Further information can be found in the <span className="text-green-500">Analysis</span> section.</p>
                 
