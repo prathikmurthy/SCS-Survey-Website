@@ -6,7 +6,8 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const spaces = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Support Space', 'Semi-Private Space', 'Meeting Spaces', 'Workplace'].sort()
+// const spaces = ['Outdoor', 'Workstation', 'Private Office', 'Private Space', 'Support Space', 'Semi-Private Space', 'Meeting Spaces', 'Workplace'].sort()
+const spaces = ['Meeting Spaces', 'Private Office', 'Private Space', 'Semi-Private Space', 'Workstation'].sort()
 
 export default function Dropdown() {
     return (

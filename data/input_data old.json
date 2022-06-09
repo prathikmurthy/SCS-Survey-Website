@@ -67,7 +67,7 @@
        "category": "Meeting Spaces",
        "id": "UE9NN6ZA",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1609866412/www.steelcase.com/2021/01/05/21-0150733.jpg",
-       "notes": "Only consider the setting to the left",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/ue9nn6za/",
        "views": 3190
     },
@@ -75,7 +75,7 @@
        "category": "Meeting Spaces",
        "id": "RY4VG5RQ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1618842028/www.steelcase.com/2021/04/19/21-0157936.jpg",
-       "notes": "Only consider the setting to the right",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/ry4vg5rq/",
        "views": 2995
     },
@@ -123,7 +123,7 @@
        "category": "Meeting Spaces",
        "id": "DQ6CB2ZE",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1631787689/www.steelcase.com/2021/09/16/21-0165632.jpg",
-       "notes": "Only consider setting to the left",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/dq6cb2ze/",
        "views": 2302
     },
@@ -392,7 +392,7 @@
        "views": 1397
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "RD8ZV4KB",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1620225850/www.steelcase.com/2021/05/05/21-0158727.jpg",
        "notes": "",
@@ -536,7 +536,7 @@
        "views": 1149
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "VX3UH9BZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623248271/www.steelcase.com/2021/06/09/21-0160692.jpg",
        "notes": "",
@@ -544,10 +544,10 @@
        "views": 1138
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Office",
        "id": "GR4AG8AR",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1631792723/www.steelcase.com/2021/09/16/21-0165642.jpg",
-       "notes": "Only space to the right",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/gr4ag8ar/",
        "views": 1109
     },
@@ -560,7 +560,7 @@
        "views": 1108
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "UR3NS2JG",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1618235961/www.steelcase.com/2021/04/12/21-0157574.jpg",
        "notes": "",
@@ -712,7 +712,7 @@
        "views": 967
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "WU3SA5TW",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1618231013/www.steelcase.com/2021/04/12/21-0157562.jpg",
        "notes": "",
@@ -808,7 +808,7 @@
        "views": 848
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "TV8DJ4CJ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623246849/www.steelcase.com/2021/06/09/21-0160688.jpg",
        "notes": "",
@@ -824,7 +824,7 @@
        "views": 820
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "JV6CY8DR",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1621838052/www.steelcase.com/2021/05/24/21-0159385.jpg",
        "notes": "",
@@ -848,7 +848,7 @@
        "views": 806
     },
     {
-       "category": "Workstation",
+       "category": "Private Office",
        "id": "GW7TK3ET",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1603288525/www.steelcase.com/2020/10/21/20-0144991.jpg",
        "notes": "",
@@ -896,7 +896,7 @@
        "views": 780
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "AM4TP5MJ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614709612/www.steelcase.com/2021/03/02/21-0154795.jpg",
        "notes": "",
@@ -952,7 +952,7 @@
        "views": 729
     },
     {
-       "category": "Private Office",
+       "category": "Private Space",
        "id": "AC9ZE9ER",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623221806/www.steelcase.com/2021/06/09/21-0160647.jpg",
        "notes": "",
@@ -1000,7 +1000,7 @@
        "views": 700
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "WB9DP2XE",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1618844732/www.steelcase.com/2021/04/19/21-0157958.jpg",
        "notes": "",
@@ -1080,7 +1080,7 @@
        "views": 646
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "XW9ZC4FE",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1580523320/www.steelcase.com/2020/02/01/20-0135054.jpg",
        "notes": "",
@@ -1107,7 +1107,7 @@
        "category": "Meeting Spaces",
        "id": "VC3WD8RX",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623247155/www.steelcase.com/2021/06/09/21-0160690.jpg",
-       "notes": "Only consider setting to the left/front",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/vc3wd8rx/",
        "views": 635
     },
@@ -1120,7 +1120,7 @@
        "views": 634
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "ZT8JW5PR",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1618231888/www.steelcase.com/2021/04/12/21-0157564.jpg",
        "notes": "",
@@ -1192,7 +1192,7 @@
        "views": 594
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "GD6YW6UN",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614700365/www.steelcase.com/2021/03/02/21-0154742.jpg",
        "notes": "",
@@ -1248,7 +1248,7 @@
        "views": 578
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Private Office",
        "id": "ZU7FK8AC",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623659964/www.steelcase.com/2021/06/14/21-0160817.jpg",
        "notes": "",
@@ -1304,7 +1304,7 @@
        "views": 543
     },
     {
-       "category": "Workstation",
+       "category": "Private Office",
        "id": "JQ6NN2HR",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1603288884/www.steelcase.com/2020/10/21/20-0144999.jpg",
        "notes": "",
@@ -1408,7 +1408,7 @@
        "views": 501
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "HQ8MK8WG",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1580490785/www.steelcase.com/2020/01/31/20-0135045.jpg",
        "notes": "",
@@ -1480,7 +1480,7 @@
        "views": 485
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "NZ7WX9SY",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623237630/www.steelcase.com/2021/06/09/21-0160667.jpg",
        "notes": "",
@@ -1488,7 +1488,7 @@
        "views": 484
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "AJ2BH8VT",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623223892/www.steelcase.com/2021/06/09/21-0160649.jpg",
        "notes": "",
@@ -1504,7 +1504,7 @@
        "views": 473
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "PU9MV2YJ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1604007131/www.steelcase.com/2020/10/29/20-0145300.jpg",
        "notes": "",
@@ -1544,7 +1544,7 @@
        "views": 461
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "KT2VT4XS",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1617201237/www.steelcase.com/2021/03/31/21-0157038.jpg",
        "notes": "",
@@ -1568,7 +1568,7 @@
        "views": 451
     },
     {
-       "category": "DELETE",
+       "category": "Support Space",
        "id": "XF9GQ8WH",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1600725985/www.steelcase.com/2020/09/21/20-0143807.jpg",
        "notes": "",
@@ -1576,7 +1576,7 @@
        "views": 450
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "TP3RZ7UZ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1617110991/www.steelcase.com/2021/03/30/21-156921.jpg",
        "notes": "",
@@ -1632,7 +1632,7 @@
        "views": 442
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "XM6GP3PM",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623249003/www.steelcase.com/2021/06/09/21-0160695.jpg",
        "notes": "",
@@ -1651,7 +1651,7 @@
        "category": "Workstation",
        "id": "AW7VM4NC",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1620034844/www.steelcase.com/2021/05/03/21-0158516.jpg",
-       "notes": "Will not include the work tents",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/aw7vm4nc/",
        "views": 437
     },
@@ -1672,7 +1672,7 @@
        "views": 428
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "AR2TU5VN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623224842/www.steelcase.com/2021/06/09/21-0160650.jpg",
        "notes": "",
@@ -1712,7 +1712,7 @@
        "views": 418
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "KD9NN6KW",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614701923/www.steelcase.com/2021/03/02/21-0154749.jpg",
        "notes": "",
@@ -1744,7 +1744,7 @@
        "views": 412
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "BF7NG3QQ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614720513/www.steelcase.com/2021/03/02/21-0154799.jpg",
        "notes": "",
@@ -1840,7 +1840,7 @@
        "views": 389
     },
     {
-       "category": "Private Office",
+       "category": "Meeting Spaces",
        "id": "QA8XH8NE",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598997782/www.steelcase.com/2020/09/01/20-0143430.jpg",
        "notes": "",
@@ -1848,7 +1848,7 @@
        "views": 388
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "YF7AZ7WV",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1584551158/www.steelcase.com/2020/03/18/20-0136636.jpg",
        "notes": "",
@@ -1960,7 +1960,7 @@
        "views": 360
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "MK9JC6GU",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1591279357/www.steelcase.com/2020/06/04/20-0140725.jpg",
        "notes": "",
@@ -1968,7 +1968,7 @@
        "views": 354
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "YK6BN2AN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623250161/www.steelcase.com/2021/06/09/21-0160701.jpg",
        "notes": "",
@@ -1976,7 +1976,7 @@
        "views": 350
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "CU7YU5MJ",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614700061/www.steelcase.com/2021/03/02/21-0154743.jpg",
        "notes": "",
@@ -1984,7 +1984,7 @@
        "views": 349
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "XV8UV8YB",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623249220/www.steelcase.com/2021/06/09/21-0160698.jpg",
        "notes": "",
@@ -2000,7 +2000,7 @@
        "views": 345
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "UQ4RW2QJ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1596485632/www.steelcase.com/2020/08/03/20-0142611.jpg",
        "notes": "",
@@ -2104,7 +2104,7 @@
        "views": 322
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "CJ7XE4SU",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1568317687/www.steelcase.com/2019/09/12/CJ7XE4SU_ISO.jpg",
        "notes": "",
@@ -2200,7 +2200,7 @@
        "views": 306
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "AM4YA3UJ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598998500/www.steelcase.com/2020/09/01/20-0143439.jpg",
        "notes": "",
@@ -2224,7 +2224,7 @@
        "views": 302
     },
     {
-       "category": "DELETE",
+       "category": "Outdoor",
        "id": "AK9BN4BU",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1614699199/www.steelcase.com/2021/03/02/21-0154746.jpg",
        "notes": "",
@@ -2368,7 +2368,7 @@
        "views": 271
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "VG8CE2MC",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598974883/www.steelcase.com/2020/09/01/20-0143378.jpg",
        "notes": "",
@@ -2392,7 +2392,7 @@
        "views": 266
     },
     {
-       "category": "DELETE",
+       "category": "Support Space",
        "id": "ZG8BX2EU",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1486763076/www.steelcase.com/2017/02/10/ZG8BX2EU.jpg",
        "notes": "",
@@ -2416,7 +2416,7 @@
        "views": 255
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "WB7WN4ZZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623248788/www.steelcase.com/2021/06/09/21-0160694.jpg",
        "notes": "",
@@ -2448,7 +2448,7 @@
        "views": 248
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "YM9CU4HP",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1596486178/www.steelcase.com/2020/08/03/20-0142618.jpg",
        "notes": "",
@@ -2568,7 +2568,7 @@
        "views": 228
     },
     {
-       "category": "Workstation",
+       "category": "Meeting Spaces",
        "id": "UX8HT9QK",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1592574758/www.steelcase.com/2020/06/19/20-0141317.jpg",
        "notes": "",
@@ -2728,7 +2728,7 @@
        "views": 210
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "NW3ES6WD",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1603215316/www.steelcase.com/2020/10/20/20-0145023.jpg",
        "notes": "",
@@ -2739,7 +2739,7 @@
        "category": "Meeting Spaces",
        "id": "FD4YD6PP",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1580142642/www.steelcase.com/2020/01/27/20-0134820.jpg",
-       "notes": "Will include only setting to the right",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/fd4yd6pp/",
        "views": 207
     },
@@ -2752,7 +2752,7 @@
        "views": 205
     },
     {
-       "category": "DELETE",
+       "category": "Workstation",
        "id": "FT8XW2QQ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1600890663/www.steelcase.com/2020/09/23/20-0143890.jpg",
        "notes": "",
@@ -2816,7 +2816,7 @@
        "views": 199
     },
     {
-       "category": "Workstation",
+       "category": "Private Office",
        "id": "MB4JT3AT",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598454914/www.steelcase.com/2020/08/26/20-0142924.jpg",
        "notes": "",
@@ -2835,7 +2835,7 @@
        "category": "Meeting Spaces",
        "id": "HE4XY7TW",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1588975223/www.steelcase.com/2020/05/08/20-0140033.jpg",
-       "notes": "Will include only setting in the front",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/he4xy7tw/",
        "views": 196
     },
@@ -2880,7 +2880,7 @@
        "views": 192
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "SK2DY7TM",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1623245660/www.steelcase.com/2021/06/09/21-0160677.jpg",
        "notes": "",
@@ -2899,7 +2899,7 @@
        "category": "Meeting Spaces",
        "id": "FM5HU8VW",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1568316164/www.steelcase.com/2019/09/12/FM5HU8VW_ISO.jpg",
-       "notes": "Will include only setting to the left",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/fm5hu8vw/",
        "views": 190
     },
@@ -2912,7 +2912,7 @@
        "views": 189
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "HZ3WJ6AD",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1584550673/www.steelcase.com/2020/03/18/20-0136630.jpg",
        "notes": "",
@@ -2952,7 +2952,7 @@
        "views": 182
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "KK2HD6PP",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1567004190/www.steelcase.com/2019/08/28/KK2HD6PP-1.jpg",
        "notes": "",
@@ -3056,7 +3056,7 @@
        "views": 173
     },
     {
-       "category": "Private Office",
+       "category": "Workplace",
        "id": "KM6TS8EG",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1551082887/www.steelcase.com/2019/02/25/KM6TS8EG.jpg",
        "notes": "",
@@ -3096,10 +3096,10 @@
        "views": 170
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Office",
        "id": "ZT2XH3EH",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1599494965/www.steelcase.com/2020/09/07/20-0143456.jpg",
-       "notes": "Only setting to the left",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/zt2xh3eh/",
        "views": 170
     },
@@ -3168,7 +3168,7 @@
        "views": 165
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "YG3YY6VP",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1568318011/www.steelcase.com/2019/09/12/YG3YY6VP_ISO.jpg",
        "notes": "",
@@ -3184,7 +3184,7 @@
        "views": 164
     },
     {
-       "category": "Workstation",
+       "category": "Private Office",
        "id": "QP9TS2UT",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1587575895/www.steelcase.com/2020/04/22/20-0139521.jpg",
        "notes": "",
@@ -3280,7 +3280,7 @@
        "views": 150
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "EK3EA2RC",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1592574737/www.steelcase.com/2020/06/19/20-0141326.jpg",
        "notes": "",
@@ -3296,7 +3296,7 @@
        "views": 149
     },
     {
-       "category": "DELETE",
+       "category": "Private Office",
        "id": "TW9MG3FJ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1587577381/www.steelcase.com/2020/04/22/20-0139518.jpg",
        "notes": "",
@@ -3328,7 +3328,7 @@
        "views": 145
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "TB2NX2VG",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1586987545/www.steelcase.com/2020/04/15/20-0138564.jpg",
        "notes": "",
@@ -3336,15 +3336,15 @@
        "views": 143
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Office",
        "id": "DJ3KS2QZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1587574036/www.steelcase.com/2020/04/22/20-0139530.jpg",
-       "notes": "Only setting to the right",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/dj3ks2qz/",
        "views": 142
     },
     {
-       "category": "Private Space",
+       "category": "Workstation",
        "id": "HW8EC9TF",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598366683/www.steelcase.com/2020/08/25/20-0142918.jpg",
        "notes": "",
@@ -3432,7 +3432,7 @@
        "views": 137
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "BK9VJ7XE",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1588179128/www.steelcase.com/2020/04/29/20-0139739.jpg",
        "notes": "",
@@ -3520,7 +3520,7 @@
        "views": 127
     },
     {
-       "category": "DELETE",
+       "category": "Private Office",
        "id": "TE4DX9SX",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1587576574/www.steelcase.com/2020/04/22/20-0139524.jpg",
        "notes": "",
@@ -3528,7 +3528,7 @@
        "views": 126
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "AQ4VA8XN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1554993245/www.steelcase.com/2019/04/11/AQ4VA8XN_4W-C6-1.jpg",
        "notes": "",
@@ -3632,7 +3632,7 @@
        "views": 119
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "HR4DC5TN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1594676675/www.steelcase.com/2020/07/13/20-0142178.jpg",
        "notes": "",
@@ -3643,7 +3643,7 @@
        "category": "Workstation",
        "id": "NK5CB9YU",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1485881770/www.steelcase.com/2017/01/31/nk5cb9yu_web_test.jpg",
-       "notes": "Will only include setting to the left",
+       "notes": "",
        "url": "https://www.steelcase.com/resources/space-planning-ideas/nk5cb9yu/",
        "views": 118
     },
@@ -3656,7 +3656,7 @@
        "views": 118
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "EP9PV2NB",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1567003155/www.steelcase.com/2019/08/28/EP9PV2NB-1.jpg",
        "notes": "",
@@ -3680,7 +3680,7 @@
        "views": 114
     },
     {
-       "category": "Private Office",
+       "category": "Semi-Private Space",
        "id": "VU4ZD2KT",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1468868843/www.steelcase.com/2016/07/18/VU4ZD2KT_ISO.jpg",
        "notes": "",
@@ -3728,7 +3728,7 @@
        "views": 111
     },
     {
-       "category": "Private Space",
+       "category": "Private Office",
        "id": "BM8QB3NZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598364294/www.steelcase.com/2020/08/25/20-0142916.jpg",
        "notes": "",
@@ -3784,7 +3784,7 @@
        "views": 107
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "YE6AG8UB",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1598905687/www.steelcase.com/2020/08/31/20-0143387.jpg",
        "notes": "",
@@ -3800,7 +3800,7 @@
        "views": 105
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "HE8JD9PV",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1568229666/www.steelcase.com/2019/09/11/HE8JD9PV.jpg",
        "notes": "",
@@ -3840,7 +3840,7 @@
        "views": 102
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "PF8HT3MP",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1603215622/www.steelcase.com/2020/10/20/20-0145022.jpg",
        "notes": "",
@@ -3856,7 +3856,7 @@
        "views": 101
     },
     {
-       "category": "DELETE",
+       "category": "Support Space",
        "id": "XH3YD6VX",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1458061126/www.steelcase.com/2016/03/15/XH3YD6VX_ISO.jpg",
        "notes": "",
@@ -3904,7 +3904,7 @@
        "views": 98
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "UJ5JY6PN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1581434459/www.steelcase.com/2020/02/11/20-0135317.jpg",
        "notes": "",
@@ -3928,7 +3928,7 @@
        "views": 95
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "ZN5VG6DW",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1594678219/www.steelcase.com/2020/07/13/20-0142188.jpg",
        "notes": "",
@@ -3992,7 +3992,7 @@
        "views": 88
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "HX9CY4YQ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1444663787/www.steelcase.com/2015/10/12/HX9CY4YQ_ISO.jpg",
        "notes": "",
@@ -4032,7 +4032,7 @@
        "views": 82
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "SR9ZB6GN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1554993272/www.steelcase.com/2019/04/11/SR9ZB6GN_4W-E8-1.jpg",
        "notes": "",
@@ -4184,7 +4184,7 @@
        "views": 72
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "FT8VU9KN",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1565813121/www.steelcase.com/2019/08/14/FT8VU9KN.jpg",
        "notes": "",
@@ -4192,7 +4192,7 @@
        "views": 72
     },
     {
-       "category": "Workstation",
+       "category": "Meeting Spaces",
        "id": "TW4HU5FH",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1580156163/www.steelcase.com/2020/01/27/20-0134852.jpg",
        "notes": "",
@@ -4256,7 +4256,7 @@
        "views": 70
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "HF2FJ2MB",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1572901976/www.steelcase.com/2019/11/04/HF2FJ2MB.jpg",
        "notes": "",
@@ -4336,7 +4336,7 @@
        "views": 64
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "FE8ZW9JS",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1567003358/www.steelcase.com/2019/08/28/FE8ZW9JS-1.jpg",
        "notes": "",
@@ -4376,7 +4376,7 @@
        "views": 62
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "AV4DW7AZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1591107954/www.steelcase.com/2020/06/02/20-0140561.jpg",
        "notes": "",
@@ -4400,7 +4400,7 @@
        "views": 58
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "SF9DT7AZ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1570820103/www.steelcase.com/2019/10/11/SF9DT7AZ_ISO.jpg",
        "notes": "",
@@ -4416,7 +4416,7 @@
        "views": 58
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Semi-Private Space",
        "id": "YH2VH5ZH",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1620118231/www.steelcase.com/2021/05/04/21-0158594.jpg",
        "notes": "",
@@ -4432,7 +4432,7 @@
        "views": 57
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "YM3WP6HK",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1589817118/www.steelcase.com/2020/05/18/20-0140307.jpg",
        "notes": "",
@@ -4504,7 +4504,7 @@
        "views": 53
     },
     {
-       "category": "Private Space",
+       "category": "Meeting Spaces",
        "id": "GK3UH3UR",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1572901533/www.steelcase.com/2019/11/04/GK3UH3UR.jpg",
        "notes": "",
@@ -4544,7 +4544,7 @@
        "views": 49
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "GF8YK4TH",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1572901291/www.steelcase.com/2019/11/04/GF8YK4TH.jpg",
        "notes": "",
@@ -4560,7 +4560,7 @@
        "views": 49
     },
     {
-       "category": "Workstation",
+       "category": "Semi-Private Space",
        "id": "MB2PY6KQ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1590427084/www.steelcase.com/2020/05/25/20-0140458.jpg",
        "notes": "",
@@ -4568,7 +4568,7 @@
        "views": 49
     },
     {
-       "category": "DELETE",
+       "category": "Support Space",
        "id": "UJ3ME5GD",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1579882683/www.steelcase.com/2020/01/24/20-0134439.jpg",
        "notes": "",
@@ -4576,7 +4576,7 @@
        "views": 48
     },
     {
-       "category": "Private Office",
+       "category": "Private Space",
        "id": "EX4WB6EV",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1554993255/www.steelcase.com/2019/04/11/EX4WB6EV-4W-C9-1.jpg",
        "notes": "",
@@ -4592,7 +4592,7 @@
        "views": 46
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "DE6MJ4KU",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1433964880/www.steelcase.com/DE6MJ4KU_ISO.jpg",
        "notes": "",
@@ -4624,7 +4624,7 @@
        "views": 42
     },
     {
-       "category": "Meeting Spaces",
+       "category": "Private Space",
        "id": "NX2AN4MN",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1610950864/www.steelcase.com/2021/01/18/21-0152080.jpg",
        "notes": "",
@@ -4808,7 +4808,7 @@
        "views": 27
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "CX4NZ4TC",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1474943606/www.steelcase.com/2016/09/27/CX4NZ4TC_ISO.jpg",
        "notes": "",
@@ -4824,7 +4824,7 @@
        "views": 26
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "GQ4ZS4AN",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1610706415/www.steelcase.com/2021/01/15/21-0152043.jpg",
        "notes": "",
@@ -4864,7 +4864,7 @@
        "views": 20
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "RG9JG6AR",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1590768136/www.steelcase.com/2020/05/29/20-0140484.jpg",
        "notes": "",
@@ -4896,7 +4896,7 @@
        "views": 17
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "QE3XG9ND",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1474941751/www.steelcase.com/2016/09/27/QE3XG9ND_ISO.jpg",
        "notes": "",
@@ -4912,7 +4912,7 @@
        "views": 12
     },
     {
-       "category": "Semi-Private Space",
+       "category": "Meeting Spaces",
        "id": "YU7JZ6SQ",
        "image": "https://images.steelcase.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1522219119/www.steelcase.com/2018/03/28/YU7JZ6SQ_In-Between-Spaces_Clipper_5.jpg",
        "notes": "",
@@ -4936,7 +4936,7 @@
        "views": 7
     },
     {
-       "category": "DELETE",
+       "category": "Support Space",
        "id": "CQ7ZR3YV",
        "image": "https://steelcase-res.cloudinary.com/image/upload/c_fill,q_auto,f_auto,h_900,w_1600/v1607987807/www.steelcase.com/2020/12/14/20-0148317.jpg",
        "notes": "",

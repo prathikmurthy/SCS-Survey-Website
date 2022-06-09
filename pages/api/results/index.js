@@ -3,7 +3,6 @@ require('dotenv').config();
 const id = process.env.MONGO_API;
 const db_name = "Planning-Idea-Survey";
 const collection = "00" 
-const input_collection = "01"
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 

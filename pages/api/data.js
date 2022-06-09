@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 
             await m.init()
 
-            let doc = await m.find({id: 'submissions'})
+            var doc = await m.find({id: 'submissions'})
             doc = doc[0]
             if (doc['data'].find((x) => x == req.body['id']) == undefined) {
                 doc['data'].push(req.body['id'])
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
                 
                 doc = await m.find({id: 'votes'});
                 doc = doc[0].data
-                console.log(doc)
+                // console.log(doc)
                 // console.log(req.body['data'])
                 for (var i in req.body['data']) {
                     if (req.body['data'][i].length != 0) {
@@ -45,19 +45,40 @@ export default async function handler(req, res) {
                         } else {
                             doc[i][doc[i].findIndex((x) => x.id == req.body['data'][i][j].id)].votes += 1;
                         }
-                        console.log(doc)
+                        // console.log(doc)
 
                     }
                 }
                 await m.replace({id: 'votes'}, {id: 'votes', data:doc})
+                await m.close();
+                
 
                 res.status(200).json( {res: 'Success'} )
 
 
             } else {
+                await m.close();
+
                 res.status(500).json( {res: 'ERROR: Our records indicate you have already made a submission, if this is an error please contact pmurthy@steelcase.com'})
             }
 
+            break;
+
+        case 'GET':
+            var m = new Mongo(new MongoClient(id,  { 
+                useNewUrlParser: true,
+                useUnifiedTopology: true, 
+                serverApi: ServerApiVersion.v1 
+            }), db_name, '02')
+
+            await m.init()
+
+            var doc = await m.find({id: 'submissions'})
+            await m.close();
+            doc = doc[0]['data']
+            // console.log(doc)
+
+            return res.status(200).json( {res: doc} )
             break;
     }
   }

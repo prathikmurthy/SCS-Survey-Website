@@ -2,7 +2,7 @@ import {react, useState, useEffect} from 'react';
 import { debounce } from '../utilities/debounce.js'
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const spaces = ['Meeting Spaces', 'Outdoor', 'Private Office', 'Private Space', 'Semi-Private Space', 'Support Space', 'Workplace', 'Workstation']
+const spaces = ['Meeting Spaces', 'Private Office', 'Private Space', 'Semi-Private Space', 'Workstation']
 
 export function SurveyNavBar() {
 
@@ -11,7 +11,7 @@ export function SurveyNavBar() {
 
     const handleScroll = debounce(() => {
         const currentScrollPos = window.pageYOffset;
-        console.log(currentScrollPos);
+        // console.log(currentScrollPos);
         setVisible((prevScrollPos > currentScrollPos) && currentScrollPos > 800);
     
         setPrevScrollPos(currentScrollPos);
