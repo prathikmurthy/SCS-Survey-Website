@@ -44,7 +44,8 @@ export default class Mongo {
         const cursor = this.collection.find(query, {});
     
         if ((await this.collection.countDocuments()) == 0) {
-            console.log("None found !!!");
+            // console.log("None found !!!");
+            return [];
         } else {
             let arr = [];
             for (const doc of await cursor.toArray()) {

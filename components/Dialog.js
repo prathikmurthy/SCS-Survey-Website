@@ -22,16 +22,21 @@ const SubmissionDialog = () => {
     }
     
     // const API_Post = () => {
-    //     axios.post('/api/db', {
-    //         id: document.getElementById('input').value,
-    //         data: JSON.parse(JSON.stringify(list)),
-    //     }).then(function (response) {
-    //         alert("Submission Successful! You can now close this page, thank you!")
-    //     }).catch(function (error) {
-    //         alert("ERROR: An error occured while processing your submission, please try again later.")
-    //     })
+    //     
     // }
     const API_Post = () => {
+
+        // Submission Data
+        axios.post('/api/db', {
+                id: document.getElementById('input').value,
+                data: JSON.parse(JSON.stringify(list)),
+            }).then(function (response) {
+                // alert("Submission Successful! You can now close this page, thank you!")
+            }).catch(function (error) {
+                alert("ERROR: An error occured while processing your submission, please try again later.")
+            })
+
+        // Data Aggregator
         axios.post('/api/data', {
             id: document.getElementById('input').value,
             data: JSON.parse(JSON.stringify(list)),

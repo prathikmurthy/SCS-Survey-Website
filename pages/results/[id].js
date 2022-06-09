@@ -43,7 +43,7 @@ export default function Category({id}) {
     const fetcher = (url) => fetch(url).then((res) => res.json());
     const { data, error } = useSWR(id ? '/api/results/'+id : null, fetcher);
 
-    console.log('/api/results/'+id);
+    // console.log('/api/results/'+id);
 
     useEffect(() => {
         if (data) { 
@@ -55,6 +55,25 @@ export default function Category({id}) {
     // if (!data || data['res'].length == 0) return "Loading...";
     
     console.log(x)
+
+    if (x['res'].length == 0 && id == 'all') {
+        return (
+            <div>
+                <ResultsNavBar />
+                <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found</h1>
+                <p className="text-slate-500 text-2xl text-center font-bold pt-5">It looks like no submissions have been made yet, please check back later!</p>
+            </div>
+        )
+    } else if (x['res'].length == 0) {
+        return (
+            <div>
+                <ResultsNavBar />
+                <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found for Category: <span className="text-green-500">{id}</span></h1>
+                <p className="text-slate-500 text-2xl text-center font-bold pt-5 max-w-xl m-auto">It looks like no submissions have been made for the selected category yet, please check back later!</p>
+            </div>
+        )
+
+    }
 
     // console.log(data['res'])
 
