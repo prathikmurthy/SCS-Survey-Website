@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     switch (req.method) {
         case 'POST':
             if (req.body['id'] == "") {
-                res.status(500).json( {res: 'ERROR: You must include your Steelcase username in your submission!'})
+                return res.status(500).json( {res: 'ERROR: You must include your Steelcase username in your submission!'})
             }
 
             var m = new Mongo(new MongoClient(id,  { 
@@ -53,13 +53,13 @@ export default async function handler(req, res) {
                 await m.close();
                 
 
-                res.status(200).json( {res: 'Success'} )
+                return res.status(200).json( {res: 'Success'} )
 
 
             } else {
                 await m.close();
 
-                res.status(500).json( {res: 'ERROR: Our records indicate you have already made a submission, if this is an error please contact pmurthy@steelcase.com'})
+                return res.status(500).json( {res: 'ERROR: Our records indicate you have already made a submission, if this is an error please contact pmurthy@steelcase.com'})
             }
 
             break;
