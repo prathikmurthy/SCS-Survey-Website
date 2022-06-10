@@ -58,7 +58,7 @@ export default async function handler(req, res) {
 
             let out = [];
             
-            console.log(req.body);
+            // console.log(req.body);
             for (var doc in data) {
                 for (var obj in doc['data'][req.body]) {
                     out.push(obj)
