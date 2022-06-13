@@ -137,7 +137,8 @@ export default function Analysis() {
                         {cats.map((cat) => {
                             return <p key={cat} className="p-2 text-sm text-slate-400 font-bold">{cat}</p>
                         })}
-                    </div></div>
+                    </div>
+                </div>
                 {rawdata}
             </div>
         </div>
