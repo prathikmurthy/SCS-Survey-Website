@@ -5,7 +5,7 @@ export default function SelectionCount(props) {
     const {count, setCount, list, setList} = useContext(UserContext);
 
     return (
-        <h1 className="text-white font-bold text-3xl">Selected: {count} / 50</h1>
+        <h1 className={`${count >= 50 ? 'text-red-800' : 'text-white'} font-bold text-3xl`}>Selected: {count} / 50</h1>
     )
     
 }

@@ -32,15 +32,6 @@ const SubmissionDialog = () => {
             data: JSON.parse(JSON.stringify(list)),
         }).then(function (response) {
             alert("Submission Successful! You can now close this page, thank you!")
-            // Submission Data
-            // axios.post('/api/db', {
-            //         id: document.getElementById('input').value,
-            //         data: JSON.parse(JSON.stringify(list)),
-            //     }).then(function (response) {
-            //         // alert("Submission Successful! You can now close this page, thank you!")
-            //     }).catch(function (error) {
-            //         alert("ERROR: An error occured while processing your submission, please try again later.")
-            //     })
         }).catch(function (error) {
             alert(error.response.data.res)
             return
@@ -79,7 +70,7 @@ const SubmissionDialog = () => {
                     </DialogDescription>
                     
                     <div className="grid grid-cols-2 pt-3 xl:pt-10">
-                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center rounded-2xl" id="input" type="text" placeholder="Enter Steelcase Username"></input>
+                        <input className="ml-5 bg-gray-500 text-white text-bold text-m xl:text-2xl text-center rounded-2xl" id="input" type="text" placeholder="Enter Steelcase Email"></input>
 
                         <div className="mx-auto">
                             <DialogClose>

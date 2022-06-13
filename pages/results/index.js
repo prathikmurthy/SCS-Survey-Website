@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
                 {rawdata}
                 </div>
-                <p className="text-gray-400 xl:text-lg text-md text-center pt-5">This page will automatically update when new submissions are created.</p>
+                <p className="text-gray-400 xl:text-lg text-md text-center pt-5 mb-10">This page will automatically update when new submissions are created.</p>
                 
             </div>
         </div>
