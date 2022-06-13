@@ -22,7 +22,7 @@ export default function Home() {
 
     let rawdata = []
     rawdata = submissions['res'].map((x) => {
-        return <div className="grid grid-cols-2 text-white text-2xl p-5 ">
+        return <div key={x.id} className="grid grid-cols-2 text-white text-2xl p-5 ">
                     <p>{x.id}</p>
                     <p>{x.date}</p>
                 </div>

@@ -90,11 +90,11 @@ export default function Analysis() {
 
     let rawdata = []
     rawdata = submissions['res'].map((x) => {
-        return <div className="grid grid-cols-2 text-white text-2xl p-5 ">
+        return <div key={x.id}className="grid grid-cols-2 text-white text-2xl p-5 ">
                     <p>{x.id}</p>
                     <div className="grid grid-cols-5 ">
                         {cats.map((cat) => {
-                            return <p className="p-2">{x.data[cat].length}</p>
+                            return <p className="p-2" key={cat}>{x.data[cat].length}</p>
                         })}
                     </div>
                 </div>
