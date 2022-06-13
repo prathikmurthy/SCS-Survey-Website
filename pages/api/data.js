@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 // import { input_data } from '../../data/input.js'
+import { minHeight } from '@mui/system';
 import input_data from '../../data/input_data.json'
 const fs = require('fs')
 const path = require('path')
@@ -51,9 +52,31 @@ export default async function handler(req, res) {
                 }
                 await m.replace({id: 'votes'}, {id: 'votes', data:doc})
                 await m.close();
+
+                m = new Mongo(new MongoClient(id,  { 
+                    useNewUrlParser: true,
+                    useUnifiedTopology: true, 
+                    serverApi: ServerApiVersion.v1 
+                }), db_name, '00')
+
+                await m.init();
+                
+                console.log(req.body);
+            
+                const d = new Date();
+                
+                req.body['date'] = d.toLocaleString();
+                
+                await m.add(req.body);
+
+                await m.close();
+                
+                return res.status(200).json( {res: 'Success'} )
+                
+                break;
                 
 
-                return res.status(200).json( {res: 'Success'} )
+                // return res.status(200).json( {res: 'Success'} )
 
 
             } else {

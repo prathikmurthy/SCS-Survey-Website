@@ -33,14 +33,14 @@ const SubmissionDialog = () => {
         }).then(function (response) {
             alert("Submission Successful! You can now close this page, thank you!")
             // Submission Data
-            axios.post('/api/db', {
-                    id: document.getElementById('input').value,
-                    data: JSON.parse(JSON.stringify(list)),
-                }).then(function (response) {
-                    // alert("Submission Successful! You can now close this page, thank you!")
-                }).catch(function (error) {
-                    alert("ERROR: An error occured while processing your submission, please try again later.")
-                })
+            // axios.post('/api/db', {
+            //         id: document.getElementById('input').value,
+            //         data: JSON.parse(JSON.stringify(list)),
+            //     }).then(function (response) {
+            //         // alert("Submission Successful! You can now close this page, thank you!")
+            //     }).catch(function (error) {
+            //         alert("ERROR: An error occured while processing your submission, please try again later.")
+            //     })
         }).catch(function (error) {
             alert(error.response.data.res)
             return

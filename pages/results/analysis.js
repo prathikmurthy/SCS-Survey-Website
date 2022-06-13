@@ -15,26 +15,45 @@ export default function Analysis() {
 
     if (!mdata || !count || !submissions) return <div className="grid place-items-center h-screen"><CircularProgress sx={{color:'success.main'}} className="inset-0"/></div>;
 
-    if (submissions['res'].length == 0) {
-        return (
-            <div>
-                <ResultsNavBar />
-                <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found</h1>
-                <p className="text-slate-500 text-2xl text-center font-bold pt-5">It looks like no submissions have been made yet, please check back later!</p>
-            </div>
-        )
-    }
+    console.log(count)
+    // if (submissions['res'].length == 0) {
+    //     return (
+    //         <div>
+    //             <ResultsNavBar />
+    //             <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found</h1>
+    //             <p className="text-slate-500 text-2xl text-center font-bold pt-5">It looks like no submissions have been made yet, please check back later!</p>
+    //         </div>
+    //     )
+    // }
 
+    let votes = 0;
     let votes_by_cat = {}
     mdata['res'].forEach(element => {
         votes_by_cat[element.cat] == undefined ? votes_by_cat[element.cat] = element.votes : votes_by_cat[element.cat] += element.votes
+        votes += element.votes;
     });
-
+    
     let cats = []
-    let votes = []
+    let votes_list = []
     for (var cat in votes_by_cat) {
         cats.push(cat)
-        votes.push(votes_by_cat[cat])
+        votes_list.push(votes_by_cat[cat])
+    }
+
+    function findPopularCat(votes_by_cat) {
+        // console.log(votes_by_cat)
+        var out = ""
+        var max = undefined
+        for (var cat in votes_by_cat) {
+            if (votes_by_cat[cat] == max) {
+                out += " and "
+                out += cat
+            } else if (votes_by_cat[cat] > max || max == undefined) {
+                out = cat
+                max = votes_by_cat[cat];
+            }
+        }
+        return [out, max]
     }
 
     ChartJS.register(ArcElement, Tooltip, Legend);
@@ -44,7 +63,7 @@ export default function Analysis() {
         datasets: [
           {
             label: '# of Votes',
-            data: votes,
+            data: votes_list,
             backgroundColor: [
                 '#22c55e',
                 '#ef4444',
@@ -67,26 +86,35 @@ export default function Analysis() {
     }
 
 
-    // console.log(submissions['res'])
+    console.log(submissions['res'])
 
     let rawdata = []
     rawdata = submissions['res'].map((x) => {
-        return <div key={x.id} className="grid grid-cols-2 text-white text-2xl p-5 ">
+        return <div className="grid grid-cols-2 text-white text-2xl p-5 ">
                     <p>{x.id}</p>
                     <div className="grid grid-cols-5 ">
                         {cats.map((cat) => {
-                            return <p className="p-2" key={cat}>{x.data[cat].length}</p>
+                            return <p className="p-2">{x.data[cat].length}</p>
                         })}
                     </div>
                 </div>
     })
 
 
+    console.log(rawdata)
+
+
     return (
         <div className="mb-10">
             <ResultsNavBar />
             <div className="max-w-4xl m-auto ">
-                <p className="text-gray-400 xl:text-lg text-md text-center pt-5">This Page will automatically update when new submissions are created.</p>
+                {/* <p className="text-gray-400 xl:text-lg text-md text-center pt-5">This Page will automatically update when new submissions are created.</p> */}
+                <p className="text-white xl:text-2xl text-md text-center pt-5 xl:pb-10">There have been <span className="text-green-500">{count['res'].length}</span> unique submission(s) since this survey went live.</p>
+                {
+                    count['res'].length > 0 ? <div><p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">Of those submission(s), <span className="text-green-500">{votes}</span> total votes have been cast for <span className="text-green-500">{mdata['res'].length}</span> unique planning ideas.</p>
+                    <p className="text-white xl:text-2xl text-md text-center pt-2 xl:pb-10">The most popular category amongst voters appears to be <span className="text-green-500">{findPopularCat(votes_by_cat)[0]}</span>, with <span className="text-green-500">{findPopularCat(votes_by_cat)[1]}</span> total votes.</p>
+                    </div> : null
+                }
 
                 <div className="grid grid-cols-2 divide-x-2 divide-slate-300/25 mt-5">
                     <div className="pr-5">

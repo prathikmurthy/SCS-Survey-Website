@@ -1,4 +1,4 @@
-import Mongo from '../../utilities/MongoDB.js';
+import Mongo from '../../../utilities/MongoDB.js';
 require('dotenv').config();
 const id = process.env.MONGO_API;
 const db_name = "Planning-Idea-Survey";
@@ -17,9 +17,8 @@ export default async function handler(req, res) {
 
     const data = await m.find({})
 
-    await m.close();
-
-    console.log(data)
     
-    return res.status(200).json( {res: data})
+    
+
+    res.status(200).json( {res: out})
 }
