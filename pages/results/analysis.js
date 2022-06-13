@@ -16,15 +16,15 @@ export default function Analysis() {
     if (!mdata || !count || !submissions) return <div className="grid place-items-center h-screen"><CircularProgress sx={{color:'success.main'}} className="inset-0"/></div>;
 
     console.log(count)
-    // if (submissions['res'].length == 0) {
-    //     return (
-    //         <div>
-    //             <ResultsNavBar />
-    //             <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found</h1>
-    //             <p className="text-slate-500 text-2xl text-center font-bold pt-5">It looks like no submissions have been made yet, please check back later!</p>
-    //         </div>
-    //     )
-    // }
+    if (submissions['res'].length == 0) {
+        return (
+            <div>
+                <ResultsNavBar />
+                <h1 className="text-white text-4xl text-center font-bold pt-20">No Submissions Found</h1>
+                <p className="text-slate-500 text-2xl text-center font-bold pt-5">It looks like no submissions have been made yet, please check back later!</p>
+            </div>
+        )
+    }
 
     let votes = 0;
     let votes_by_cat = {}
