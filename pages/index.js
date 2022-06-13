@@ -51,12 +51,15 @@ export default function App() {
         { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><TileGrid title={x} rec={input_rec_counts[x]} arr={dict[x]}/></section>)] }
 
         </div>
-        <div className="grid grid-cols-3 mt-10 max-w-2xl max-h-xl m-auto">
+        {/* <div className="grid grid-cols-3 mt-10 max-w-2xl max-h-xl m-auto">
           <Image src={scs} layout='intrinsic'></Image>
           <button className="bg-green-500 rounded-full text-xl ml-24 mr-24 mt-10 mb-10 text-green-500">\t</button>
-          <Image src={imo} layout='intrinsic'></Image>
-        </div>
+        </div> */}
                 
+          <div className="flex justify-center">
+            <Image src={imo} layout='intrinsic' height="100" width="200"></Image>
+          </div>
+            
         <p className="text-white text-xs xl:text-md text-center pt-4 pb-4">Created by the Innovation Management Office - 2022</p>
         <Footer />
         
