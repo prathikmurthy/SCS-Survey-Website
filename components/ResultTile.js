@@ -22,14 +22,14 @@ export default function ResultTile(props) {
         }
     }
 
-    try {
+    // try {
 
-        const {count, setCount, list, setList} = useContext(ResultContext);
-        canSelect = true
+    //     const {count, setCount, list, setList} = useContext(ResultContext);
+    //     canSelect = true
 
-    } catch (e) {
+    // } catch (e) {
         
-    }
+    // }
 
     const add = () => {
         setCount( count + 1 );
