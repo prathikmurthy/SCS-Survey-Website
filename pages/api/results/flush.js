@@ -50,5 +50,5 @@ export default async function handler(req, res) {
     // }
     
 
-    res.status(200).json( {res: out})
+    res.status(200).json( 'Success!!')
 }
