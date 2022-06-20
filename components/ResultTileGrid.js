@@ -1,10 +1,10 @@
 import {react, useContext, useEffect} from 'react';
-import { UserContext } from '../pages/results/[id].js' 
+// import { UserContext } from '../pages/results/[id].js' 
 import ResultTile from './ResultTile.js';
 
 export default function ResultTileGrid(props) {
   
-  const {list, setList} = useContext(UserContext);
+  // const {list, setList} = useContext(UserContext);
 
   let grid = []
   for (let x = 0; x < props.arr.length; x++) {

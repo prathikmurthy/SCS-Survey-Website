@@ -1,6 +1,8 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import {useContext, useState, useEffect } from 'react';
 import { UserContext } from '../pages/index.js';
+import { ResultContext } from '../pages/results/finalselection.js'
+
 const axios = require('axios');
 
 const Dialog = DialogPrimitive.Root;
@@ -12,7 +14,11 @@ const DialogClose = DialogPrimitive.Close;
 
 const SubmissionDialog = () => {
     
-    const {list, setList} = useContext(UserContext);
+    try {
+        var {list, setList} = useContext(UserContext);
+    } catch (e) {
+        var {list, setList} = useContext(ResultContext);
+    }
     
     const ClearSelections = () => {
         console.log(list);
@@ -40,6 +46,9 @@ const SubmissionDialog = () => {
     }
     
     let out = []
+
+    // console.log(list)
+
     for (var i = 0; i < Object.keys(list).length; i++) {
         out.push(
             <div className="grid grid-cols-2 p-2 ">

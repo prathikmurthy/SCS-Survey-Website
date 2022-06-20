@@ -61,7 +61,7 @@ export default function App() {
           </div>
             
         <p className="text-white text-xs xl:text-md text-center pt-4 pb-4">Created by the Innovation Management Office - 2022</p>
-        <Footer />
+        <Footer minscroll={800}/>
         
       </div>
     </UserContext.Provider>

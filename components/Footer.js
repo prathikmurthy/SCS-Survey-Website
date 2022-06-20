@@ -12,7 +12,7 @@ export default function Footer(props) {
     const handleScroll = debounce(() => {
         const currentScrollPos = window.pageYOffset;
     
-        setVisible(currentScrollPos > 800);
+        setVisible(currentScrollPos > props.minscroll);
     
         setPrevScrollPos(currentScrollPos);
     }, 10);
@@ -37,6 +37,8 @@ export default function Footer(props) {
                     </Link>         
                 </div>
             </div>
+
+            
         
       </footer>
     )

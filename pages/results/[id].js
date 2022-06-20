@@ -15,7 +15,7 @@ export default function Category({id}) {
     const [count, setCount] = useState( 0 );
 
     // list = array of selected tiles
-    const [list, setList] = useState( {} );
+    const [list, setList] = useState( [] );
     
     // const [grid, setGrid] = useState( {} );
     const [ x, setX ] = useState(undefined)
@@ -26,7 +26,7 @@ export default function Category({id}) {
 
     useEffect(() => {
         if (id) {
-            console.log(x)
+            // console.log(x)
             
             setX(undefined)
         }
@@ -54,7 +54,7 @@ export default function Category({id}) {
     if (!data || !x) return <div className="grid place-items-center h-screen"><CircularProgress sx={{color:'success.main'}} className="inset-0"/></div>;
     // if (!data || data['res'].length == 0) return "Loading...";
     
-    console.log(x)
+    // console.log(x)
 
     if (x['res'].length == 0 && id == 'all') {
         return (

@@ -6,20 +6,6 @@ import { debounce } from '../utilities/debounce.js'
 import Link from 'next/link'
 
 export function ResultsNavBar() {
-    const items = [
-        {
-            name: 'Home',
-            link: ''
-        },
-        {
-            name: 'Spaces',
-            link: 'all'
-        },
-        {
-            name: 'Analysis',
-            link: 'analysis'
-        }
-    ]
 
     const [dropdown, setDropdown] = useState(false);
 
@@ -59,6 +45,11 @@ export function ResultsNavBar() {
                 <li className="p-5 text-white font-bold">
                     <Link href='/results/analysis'>
                         <a>Analysis</a>
+                    </Link>
+                </li>
+                <li className="p-5 text-white font-bold">
+                    <Link href='/results/finalselection'>
+                        <a>Final Selection</a>
                     </Link>
                 </li>
                 

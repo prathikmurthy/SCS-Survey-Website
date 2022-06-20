@@ -1,5 +1,5 @@
-import { ResultsNavBar } from "../../components/ResultsNavBar"
 import useSWR from 'swr';
+import { ResultsNavBar } from "../../components/ResultsNavBar"
 import {react, useState, useContext, createContext, useEffect} from 'react'
 import CircularProgress from '@mui/material/CircularProgress';
 // import React from 'react';
