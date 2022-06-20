@@ -14,11 +14,26 @@ export default async function handler(req, res) {
     }), db_name, collection);
 
     await m.init();
-
+    
     await m.cleardb();
-
+    
     await m.close();
+    
+    var m = new Mongo(new MongoClient(id,  { 
+        useNewUrlParser: true,
+        useUnifiedTopology: true, 
+        serverApi: ServerApiVersion.v1 
+    }), db_name, '02');
 
+    await m.init();
+
+    let votes = {id: 'votes', data: {'Meeting Spaces': [], 'Private Space': [], 'Private Office': [], 'Semi-Private Office': [], 'Workstation': []}}
+    let subs = {id: 'submissions', data: []}
+    await m.cleardb();
+    await m.add(votes);
+    await m.add(subs);
+    await m.close()
+    
     // const data = await m.find({})
 
     // let out = [];
