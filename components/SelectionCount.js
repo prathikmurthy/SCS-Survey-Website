@@ -11,10 +11,10 @@ export default function SelectionCount(props) {
     // }
     
     try {
-        let ctx = UserContext;
+        var ctx = UserContext;
     } catch (e) {
         // var {list, setList} = useContext(ResultContext);
-        let ctx = ResultContext
+        var ctx = ResultContext
     }
     
     

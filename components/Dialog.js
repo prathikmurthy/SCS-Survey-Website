@@ -15,10 +15,10 @@ const DialogClose = DialogPrimitive.Close;
 const SubmissionDialog = () => {
     
     try {
-        let ctx = UserContext;
+        var ctx = UserContext;
     } catch (e) {
         // var {list, setList} = useContext(ResultContext);.
-        let ctx = ResultContext
+        var ctx = ResultContext
     }
     
     
