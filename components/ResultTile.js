@@ -31,9 +31,11 @@ export default function ResultTile(props) {
         // var {list, setList} = useContext(ResultContext);
         var ctx = ResultContext;
     }
+
     
     
-    var {count, setCount, list, setList} = useContext(ctx);
+    
+    var {count, setCount, list, setList} = useContext(UserContext).catch(useContext(ResultContext));
 
     // try {
 
