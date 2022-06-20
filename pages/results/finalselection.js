@@ -2,7 +2,7 @@ import { ResultsNavBar } from "../../components/ResultsNavBar"
 import {react, useState, useContext, createContext, useEffect} from 'react'
 import useSWR from 'swr';
 import CircularProgress from '@mui/material/CircularProgress';
-import ResultTileGrid from '../../components/ResultTileGrid.js';
+import FinalTileGrid from '../../components/FinalTileGrid.js';
 import Footer from '../../components/Footer.js'
 
 
@@ -39,7 +39,7 @@ export default function FinalSelection() {
                 <ResultsNavBar />
                 <div className="pb-20">
             
-                    { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><ResultTileGrid title={x} rec={9} arr={dict[x]}/></section>)] }
+                    { [Object.keys(dict).map( x => <section key={x} id={x.split(" ").join('')}><FinalTileGrid title={x} rec={9} arr={dict[x]}/></section>)] }
 
                 </div>
                 <Footer minscroll={0}/>

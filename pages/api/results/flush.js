@@ -5,6 +5,15 @@ const db_name = "Planning-Idea-Survey";
 const collection = "00" 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
+// fetch('https://planningideas.vercel.app/api/results/flush', {
+//   method: 'GET',
+  
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8'
+//   }
+// })
+// .then(res => res.json())
+// .then(console.log)
 
 export default async function handler(req, res) {
     var m = new Mongo(new MongoClient(id,  { 
