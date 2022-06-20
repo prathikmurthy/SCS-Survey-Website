@@ -22,20 +22,20 @@ export default function FinalTile(props) {
         }
     }
 
-    // const {count, setCount, list, setList} = useContext(ResultContext);
+    // const {c, setC, l, setL} = useContext(ResultContext);
 
     // try {
     //     var ctx = UserContext;
     //     canSelect = true;
     // } catch (e) {
-    //     // var {list, setList} = useContext(ResultContext);
+    //     // var {l, setL} = useContext(ResultContext);
     //     var ctx = ResultContext;
     // }
 
     
     
     
-    var {count, setCount, list, setList} = useContext(ResultContext);
+    var {c, setC, l, setL} = useContext(ResultContext);
 
     // try {
 
@@ -46,21 +46,21 @@ export default function FinalTile(props) {
     // }
 
     const add = () => {
-        setCount( count + 1 );
+        setC( c + 1 );
 
         try {
-            list=[props.pi.cat].push(props.pi)
+            l=[props.pi.cat].push(props.pi)
         } catch (e) {
-            list[props.pi.cat] = [props.pi]
+            l[props.pi.cat] = [props.pi]
         }
-        console.log(list.length)
+        console.log(l.length)
     }
 
     const sub = () => {
-        setCount( count - 1 );
-        for (var i = 0; i < list[props.pi.cat].length; i++) {
-            if (list[props.pi.cat][i] == props.pi) {
-                list[props.pi.cat].splice(i, 1);
+        setC( c - 1 );
+        for (var i = 0; i < l[props.pi.cat].length; i++) {
+            if (l[props.pi.cat][i] == props.pi) {
+                l[props.pi.cat].splice(i, 1);
             }
         }
     }
