@@ -24,18 +24,18 @@ export default function ResultTile(props) {
 
     // const {count, setCount, list, setList} = useContext(ResultContext);
 
-    try {
-        var ctx = UserContext;
-        canSelect = true;
-    } catch (e) {
-        // var {list, setList} = useContext(ResultContext);
-        var ctx = ResultContext;
-    }
+    // try {
+    //     var ctx = UserContext;
+    //     canSelect = true;
+    // } catch (e) {
+    //     // var {list, setList} = useContext(ResultContext);
+    //     var ctx = ResultContext;
+    // }
 
     
     
     
-    var {count, setCount, list, setList} = useContext(UserContext).catch(useContext(ResultContext));
+    var {count, setCount, list, setList} = useContext(UserContext);
 
     // try {
 
