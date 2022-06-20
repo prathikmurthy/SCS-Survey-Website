@@ -49,7 +49,7 @@ export default function FinalTile(props) {
         setCount( count + 1 );
 
         try {
-            list[props.pi.cat].push(props.pi)
+            list=[props.pi.cat].push(props.pi)
         } catch (e) {
             list[props.pi.cat] = [props.pi]
         }
