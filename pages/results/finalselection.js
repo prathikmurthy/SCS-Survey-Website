@@ -47,4 +47,4 @@ export default function FinalSelection() {
         </ResultContext.Provider>
     )
 }
-// export const ResultContext = createContext();
+export const ResultContext = createContext();
