@@ -1,5 +1,5 @@
 import { react, useState, useContext } from 'react';
-// import {UserContext} from '../pages/results/[id].js'
+import {UserContext} from '../pages/results/[id].js'
 import {ResultContext} from '../pages/results/finalselection.js'
 
 import Image from 'next/image'
@@ -21,8 +21,19 @@ export default function ResultTile(props) {
             sub()
         }
     }
+
+    // const {count, setCount, list, setList} = useContext(ResultContext);
+
+    try {
+        var ctx = UserContext;
+        canSelect = true;
+    } catch (e) {
+        // var {list, setList} = useContext(ResultContext);
+        var ctx = ResultContext;
+    }
     
-    const {count, setCount, list, setList} = useContext(ResultContext);
+    
+    var {count, setCount, list, setList} = useContext(ctx);
 
     // try {
 
