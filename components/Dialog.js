@@ -14,15 +14,15 @@ const DialogClose = DialogPrimitive.Close;
 
 const SubmissionDialog = () => {
     
-    try {
-        var ctx = UserContext;
-    } catch (e) {
-        // var {list, setList} = useContext(ResultContext);.
-        var ctx = ResultContext
-    }
+    // try {
+    //     var ctx = UserContext;
+    // } catch (e) {
+    //     // var {list, setList} = useContext(ResultContext);.
+    //     var ctx = ResultContext
+    // }
     
     
-    var {list, setList} = useContext(ctx);
+    var {list, setList} = useContext(UserContext);
     
     const ClearSelections = () => {
         console.log(list);
