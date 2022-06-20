@@ -47,11 +47,11 @@ export function ResultsNavBar() {
                         <a>Analysis</a>
                     </Link>
                 </li>
-                <li className="p-5 text-white font-bold">
+                {/* <li className="p-5 text-white font-bold">
                     <Link href='/results/finalselection'>
                         <a>Final Selection</a>
                     </Link>
-                </li>
+                </li> */}
                 
             </ul>
         </div>
