@@ -1,11 +1,11 @@
 import { react, useState, useContext } from 'react';
-// import {UserContext} from '../pages/results/[id].js'
+import {UserContext} from '../pages/results/[id].js'
 import {ResultContext} from '../pages/results/finalselection.js'
 
 import Image from 'next/image'
 import { paperClasses } from '@mui/material';
 
-export default function FinalTile(props) {
+export default function ResultTile(props) {
 
     const [color, setColor] = useState('bg-[#191919]')
 
@@ -22,20 +22,20 @@ export default function FinalTile(props) {
         }
     }
 
-    // const {c, setC, l, setL} = useContext(ResultContext);
+    // const {count, setCount, list, setList} = useContext(ResultContext);
 
-    // try {
-    //     var ctx = UserContext;
-    //     canSelect = true;
-    // } catch (e) {
-    //     // var {l, setL} = useContext(ResultContext);
-    //     var ctx = ResultContext;
-    // }
+    try {
+        var ctx = UserContext;
+        canSelect = true;
+    } catch (e) {
+        // var {list, setList} = useContext(ResultContext);
+        var ctx = ResultContext;
+    }
 
     
     
     
-    var {c, setC, l, setL} = useContext(ResultContext);
+    var {count, setCount, list, setList} = useContext(UserContext).catch(useContext(ResultContext));
 
     // try {
 
@@ -46,21 +46,21 @@ export default function FinalTile(props) {
     // }
 
     const add = () => {
-        setC( c + 1 );
+        setCount( count + 1 );
 
         try {
-            l=[props.pi.cat].push(props.pi)
+            list[props.pi.cat].push(props.pi)
         } catch (e) {
-            l[props.pi.cat] = [props.pi]
+            list[props.pi.cat] = [props.pi]
         }
-        console.log(l.length)
+        console.log(list.length)
     }
 
     const sub = () => {
-        setC( c - 1 );
-        for (var i = 0; i < l[props.pi.cat].length; i++) {
-            if (l[props.pi.cat][i] == props.pi) {
-                l[props.pi.cat].splice(i, 1);
+        setCount( count - 1 );
+        for (var i = 0; i < list[props.pi.cat].length; i++) {
+            if (list[props.pi.cat][i] == props.pi) {
+                list[props.pi.cat].splice(i, 1);
             }
         }
     }

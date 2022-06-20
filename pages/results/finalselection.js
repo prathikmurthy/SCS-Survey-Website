@@ -8,10 +8,10 @@ import Footer from '../../components/Footer.js'
 
 
 export default function FinalSelection() { 
-    const [c, setC] = useState( 0 );
+    const [count, setCount] = useState( 0 );
 
     // list = array of selected tiles
-    const [l, setL] = useState( {} );
+    const [list, setList] = useState( {} );
 
     const fetcher = (url) => fetch(url).then((res) => res.json());
     const { data, error } = useSWR('/api/results/all', fetcher);
@@ -34,7 +34,7 @@ export default function FinalSelection() {
     // console.log(dict)
 
     return (
-        <ResultContext.Provider value={{c, setC, l, setL}}>
+        <ResultContext.Provider value={{count, setCount, list, setList}}>
             <div>
                 <ResultsNavBar />
                 <div className="pb-20">
@@ -47,4 +47,4 @@ export default function FinalSelection() {
         </ResultContext.Provider>
     )
 }
-export const ResultContext = createContext();
+// export const ResultContext = createContext();
