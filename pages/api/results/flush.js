@@ -36,7 +36,7 @@ export default async function handler(req, res) {
 
     await m.init();
 
-    let votes = {id: 'votes', data: {'Meeting Spaces': [], 'Private Space': [], 'Private Office': [], 'Semi-Private Office': [], 'Workstation': []}}
+    let votes = {id: 'votes', data: {'Meeting Spaces': [], 'Private Space': [], 'Private Office': [], 'Semi-Private Space': [], 'Workstation': []}}
     let subs = {id: 'submissions', data: []}
     await m.cleardb();
     await m.add(votes);
