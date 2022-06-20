@@ -24,13 +24,13 @@ export default function FinalTile(props) {
 
     // const {count, setCount, list, setList} = useContext(ResultContext);
 
-    try {
-        var ctx = UserContext;
-        canSelect = true;
-    } catch (e) {
-        // var {list, setList} = useContext(ResultContext);
-        var ctx = ResultContext;
-    }
+    // try {
+    //     var ctx = UserContext;
+    //     canSelect = true;
+    // } catch (e) {
+    //     // var {list, setList} = useContext(ResultContext);
+    //     var ctx = ResultContext;
+    // }
 
     
     
