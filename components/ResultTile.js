@@ -21,10 +21,11 @@ export default function ResultTile(props) {
             sub()
         }
     }
+    
+    const {count, setCount, list, setList} = useContext(ResultContext);
 
     // try {
 
-    //     const {count, setCount, list, setList} = useContext(ResultContext);
     //     canSelect = true
 
     // } catch (e) {
