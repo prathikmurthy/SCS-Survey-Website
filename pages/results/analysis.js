@@ -28,11 +28,28 @@ export default function Analysis() {
 
     let votes = 0;
     let votes_by_cat = {}
+    let median_by_cat = {}
     mdata['res'].forEach(element => {
         votes_by_cat[element.cat] == undefined ? votes_by_cat[element.cat] = element.votes : votes_by_cat[element.cat] += element.votes
         votes += element.votes;
+        
     });
-    
+
+    submissions['res'].forEach(element => {
+        let total = 0;
+        for (cat in element['data']) {
+            total += element['data'][cat].length
+        }
+        // console.log(total)
+        for (cat in element['data']) {
+            median_by_cat[cat] == undefined ? median_by_cat[cat] = element['data'][cat].length / total : median_by_cat[cat] += element['data'][cat].length / total; 
+        }
+    })
+
+    for (cat in median_by_cat) {
+        median_by_cat[cat] = Math.round(median_by_cat[cat])
+    }
+
     let cats = []
     let votes_list = []
     for (var cat in votes_by_cat) {
@@ -57,6 +74,9 @@ export default function Analysis() {
     }
 
     ChartJS.register(ArcElement, Tooltip, Legend);
+    console.log(cats)
+    console.log(Object.keys(median_by_cat))
+    
 
     const data = {
         labels: cats,
@@ -85,6 +105,28 @@ export default function Analysis() {
         }
     }
 
+    
+    
+    const mediandata = {
+        labels: Object.keys(median_by_cat),
+        datasets: [
+          {
+            label: '# of Votes',
+            data: Object.values(median_by_cat),
+            backgroundColor: [
+                '#22c55e',
+                '#ef4444',
+                '#eab308',
+                '#0ea5e9',
+                '#8b5cf6',
+            ],
+            borderColor: [
+                '#282c34'
+            ],
+            borderWidth: 15,
+          },
+        ],
+    };
 
     console.log(submissions['res'])
 
@@ -125,7 +167,7 @@ export default function Analysis() {
                     <div className="pl-5">
                         <p className="xl:text-4xl text-xl text-green-500 font-bold text-center xl:mt-10 pt-0 pb-5">Median Votes per Category per Submission</p>
 
-                        <Doughnut data={data} options={options}/>
+                        <Doughnut data={mediandata} options={options}/>
                     </div>
                 </div>
 
