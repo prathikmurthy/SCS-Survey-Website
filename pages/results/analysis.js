@@ -6,6 +6,16 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
+function median(numbers) {
+    const sorted = Array.from(numbers).sort((a, b) => a - b);
+    const middle = Math.floor(sorted.length / 2);
+
+    if (sorted.length % 2 === 0) {
+        return (sorted[middle - 1] + sorted[middle]) / 2;
+    }
+
+    return sorted[middle];
+}
 
 export default function Analysis() {
     const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -15,7 +25,7 @@ export default function Analysis() {
 
     if (!mdata || !count || !submissions) return <div className="grid place-items-center h-screen"><CircularProgress sx={{color:'success.main'}} className="inset-0"/></div>;
 
-    console.log(count)
+    // console.log(count)
     if (submissions['res'].length == 0) {
         return (
             <div>
@@ -34,20 +44,26 @@ export default function Analysis() {
         votes += element.votes;
         
     });
-
+    
+    let total = {}
     submissions['res'].forEach(element => {
-        let total = 0;
+        // let total = 0;
+        // for (cat in element['data']) {
+        //     total += element['data'][cat].length
+        // }
+        // // console.log(total)
+        // for (cat in element['data']) {
+        //     median_by_cat[cat] == undefined ? median_by_cat[cat] = element['data'][cat].length / total : median_by_cat[cat] += element['data'][cat].length / total; 
+        // }
+
         for (cat in element['data']) {
-            total += element['data'][cat].length
-        }
-        // console.log(total)
-        for (cat in element['data']) {
-            median_by_cat[cat] == undefined ? median_by_cat[cat] = element['data'][cat].length / total : median_by_cat[cat] += element['data'][cat].length / total; 
+            total[cat] == undefined ? total[cat] = Array(1).fill(element['data'][cat].length) : total[cat].push(element['data'][cat].length)
         }
     })
+    console.log(total)
 
-    for (cat in median_by_cat) {
-        median_by_cat[cat] = Math.round(median_by_cat[cat])
+    for (cat in total) {
+        median_by_cat[cat] = median(total[cat])
     }
 
     let cats = []
@@ -74,16 +90,16 @@ export default function Analysis() {
     }
 
     ChartJS.register(ArcElement, Tooltip, Legend);
-    console.log(cats)
-    console.log(Object.keys(median_by_cat))
+    // console.log(cats)
+    // console.log(Object.keys(median_by_cat))
     
 
     const data = {
-        labels: cats,
+        labels: Object.keys(votes_by_cat).sort(),
         datasets: [
           {
             label: '# of Votes',
-            data: votes_list,
+            data: Object.keys(votes_by_cat).sort().map((key) => { return votes_by_cat[key];}),
             backgroundColor: [
                 '#22c55e',
                 '#ef4444',
@@ -108,11 +124,11 @@ export default function Analysis() {
     
     
     const mediandata = {
-        labels: Object.keys(median_by_cat),
+        labels: Object.keys(median_by_cat).sort(),
         datasets: [
           {
             label: '# of Votes',
-            data: Object.values(median_by_cat),
+            data: Object.keys(median_by_cat).sort().map((key) => { return median_by_cat[key];}),
             backgroundColor: [
                 '#22c55e',
                 '#ef4444',
@@ -128,7 +144,7 @@ export default function Analysis() {
         ],
     };
 
-    console.log(submissions['res'])
+    // console.log(submissions['res'])
 
     let rawdata = []
     rawdata = submissions['res'].map((x) => {
@@ -143,7 +159,7 @@ export default function Analysis() {
     })
 
 
-    console.log(rawdata)
+    // console.log(rawdata)
 
 
     return (
@@ -172,6 +188,7 @@ export default function Analysis() {
                 </div>
 
             </div>
+            <p className="text-md text-center text-slate-600 font-italic">Clicking one of the space names above the graph will remove it.</p>
             <p className="xl:text-4xl text-xl text-green-500 font-bold text-center xl:pt-10 pt-0 pb-5">Raw Data</p>
             <div className="max-w-6xl m-auto divide-y-2 divide-slate-300/25">
                 <div className="grid grid-cols-2 p-5"><p className="text-slate-400 font-bold"></p>
